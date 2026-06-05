@@ -1,0 +1,4 @@
+Treatment,Outcome,Threshold,N,N_Treated,N_Control,ATE,CI_Lower,CI_Upper,p_value
+mo14_ai_automate_routine_tasks_pct,dv21_premature_death_ypll_rate,10,2898,398,2500,-464.318144992616,-877.210214375167,-126.34134118534355,0.003992015968063872
+mo14_ai_automate_routine_tasks_pct,dv21_premature_death_ypll_rate,25,2898,346,2552,-443.7840976356474,-823.0508815167273,-140.06143884718313,0.003992015968063872
+mo14_ai_automate_routine_tasks_pct,dv21_premature_death_ypll_rate,50,2898,263,2635,-395.8438425082786,-705.2063140997327,-107.01865055169027,0.007984031936127744

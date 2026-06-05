@@ -1,0 +1,9 @@
+snapshot,source_archive,source_file,measure_id,row_count,nonmissing_score_count
+2022_01,hospitals_01_2022.zip,hospitals_01_2022/Timely_and_Effective_Care-Hospital.csv,SEP_1,4711,2949
+2022_01,hospitals_01_2022.zip,hospitals_01_2022/Complications_and_Deaths-Hospital.csv,MORT_30_PN,4848,3896
+2022_04,hospitals_04_2022.zip,hospitals_04_2022/Timely_and_Effective_Care-Hospital.csv,SEP_1,4711,2949
+2022_04,hospitals_04_2022.zip,hospitals_04_2022/Complications_and_Deaths-Hospital.csv,MORT_30_PN,4848,3896
+2022_07,hospitals_07_2022.zip,hospitals_07_2022/Timely_and_Effective_Care-Hospital.csv,SEP_1,4706,3059
+2022_07,hospitals_07_2022.zip,hospitals_07_2022/Complications_and_Deaths-Hospital.csv,MORT_30_PN,4843,0
+2022_10,hospitals_10_2022.zip,hospitals_10_2022/Timely_and_Effective_Care-Hospital.csv,SEP_1,4708,3069
+2022_10,hospitals_10_2022.zip,hospitals_10_2022/Complications_and_Deaths-Hospital.csv,MORT_30_PN,4845,0

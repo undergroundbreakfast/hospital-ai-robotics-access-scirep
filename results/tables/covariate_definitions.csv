@@ -1,0 +1,22 @@
+Variable,Category,Label,Description,Source
+iv4_social_economic_factors_score,Social & Economic Factors,Social & Economic Factors Index,"Composite index including high school completion, unemployment, child poverty, income inequality, children in single-parent households, social associations, injury deaths",County Health Rankings
+iv2_physical_environment_score,Physical Environment,Physical Environment Index,"Composite index including air pollution, drinking water violations, severe housing problems, driving alone to work, long commute times",County Health Rankings
+iv3_health_behaviors_score,Health Behaviors,Health Behaviors Index,"Composite index including adult smoking, obesity, food environment, physical inactivity, exercise access, excessive drinking, alcohol-impaired driving deaths, STI rate, teen births",County Health Rankings & Behavioral Risk Factor Surveillance System
+iv1_medicaid_expansion_active,Healthcare Policy,Medicaid Expansion Status,"Binary indicator: 1 if state had adopted ACA Medicaid expansion, 0 otherwise",Kaiser Family Foundation
+log_population,Demographics,Log Population,Natural logarithm of county population (2023 estimates),US Census Bureau
+div_2,Geographic Controls,Census Division 2,Binary indicator for Census Division 2,US Census Bureau
+div_3,Geographic Controls,Census Division 3,Binary indicator for Census Division 3,US Census Bureau
+div_4,Geographic Controls,Census Division 4,Binary indicator for Census Division 4,US Census Bureau
+div_5,Geographic Controls,Census Division 5,Binary indicator for Census Division 5,US Census Bureau
+div_6,Geographic Controls,Census Division 6,Binary indicator for Census Division 6,US Census Bureau
+div_7,Geographic Controls,Census Division 7,Binary indicator for Census Division 7,US Census Bureau
+div_8,Geographic Controls,Census Division 8,Binary indicator for Census Division 8,US Census Bureau
+div_9,Geographic Controls,Census Division 9,Binary indicator for Census Division 9,US Census Bureau
+mo11_ai_staff_scheduling_pct_spatial_lag,Other,mo11_ai_staff_scheduling_pct_spatial_lag,Variable included in analysis,Various
+mo12_ai_predict_staff_needs_pct_spatial_lag,Other,mo12_ai_predict_staff_needs_pct_spatial_lag,Variable included in analysis,Various
+mo13_ai_predict_patient_demand_pct_spatial_lag,Other,mo13_ai_predict_patient_demand_pct_spatial_lag,Variable included in analysis,Various
+mo14_ai_automate_routine_tasks_pct_spatial_lag,Other,mo14_ai_automate_routine_tasks_pct_spatial_lag,Variable included in analysis,Various
+mo15_ai_optimize_workflows_pct_spatial_lag,Other,mo15_ai_optimize_workflows_pct_spatial_lag,Variable included in analysis,Various
+mo21_robotics_in_hospital_pct_spatial_lag,Other,mo21_robotics_in_hospital_pct_spatial_lag,Variable included in analysis,Various
+mo1_genai_composite_score_spatial_lag,Other,mo1_genai_composite_score_spatial_lag,Variable included in analysis,Various
+mo2_robotics_composite_score_spatial_lag,Other,mo2_robotics_composite_score_spatial_lag,Variable included in analysis,Various

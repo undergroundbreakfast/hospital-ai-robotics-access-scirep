@@ -1,0 +1,2 @@
+Treatment,Outcome,Clusters,N,N_Treated,N_Control,Median_Split,Iterations,ATE_Mean,CI_Lower,CI_Upper,p_value,Cluster_Var
+mo14_ai_automate_routine_tasks_pct,dv21_premature_death_ypll_rate,49,2898,414,2484,0.0,300,-498.35732300952475,-902.383155049761,-173.41996077076809,0.0,state_fips_for_clustering

@@ -1,0 +1,2 @@
+Treatment,Outcome,N,N_Treated,N_Control,ATE,CI_Lower,CI_Upper,p_value,Exposure_Model,Outcome_Model,Treatment_Split,Cross_Fit
+mo14_ai_automate_routine_tasks_pct,dv21_premature_death_ypll_rate,2898,414,2484,-412.698601640606,-676.7363786115654,-148.66082466964662,0.002187378183282185,LogisticRegression(l2),RandomForestRegressor,> median (0.000),False

@@ -1,0 +1,2 @@
+Test,Number_of_Tests,Chi_Squared,DF,Combined_P_Value,Interpretation
+Fisher's Combined Placebo Test,8,34.70151689217953,16,0.004365249150403705,SIGNIFICANT - potential concern

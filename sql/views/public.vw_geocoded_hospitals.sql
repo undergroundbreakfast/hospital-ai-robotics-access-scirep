@@ -1,0 +1,31 @@
+CREATE OR REPLACE VIEW public.vw_geocoded_hospitals AS
+ SELECT tg.hospital_id,
+    tg.address,
+    tg.city,
+    tg.state,
+    tg.zipcode,
+    COALESCE(tg.county_fips, aha.fcounty) AS county_fips,
+    tg.latitude,
+    tg.longitude,
+    tg.censusblock2020,
+    tg.geolocationid2020,
+    tg.censusmcdfips2020,
+    aha.mname,
+    aha.bsc,
+    aha.sysname,
+    aha.robohos,
+    aha.robosys,
+    aha.roboven,
+    aha.adjpd,
+    aha.ftemd,
+    aha.ftern,
+    aha.wfaipsn,
+    aha.wfaippd,
+    aha.wfaiss,
+    aha.wfaiart,
+    aha.wfaioacw,
+    aha.gfeet,
+    aha.ceamt
+   FROM tamu_hospitals_geocoded tg
+     JOIN aha_survey_data aha ON tg.hospital_id::text = aha.id::text
+  WHERE tg.latitude::text <> '0'::text AND tg.longitude::text <> '0'::text;;
