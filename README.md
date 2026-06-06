@@ -70,6 +70,28 @@ psql "$DATABASE_URL" \
   -f sql/load_cms_2022_hospital_quality.psql.sql
 ```
 
+## Validation Tests
+
+The repository includes a pytest suite that validates the release package and
+the Paper 1 result artifacts cited in the manuscript and Supplementary
+Information:
+
+```sh
+python -m pip install -r requirements-dev.txt
+pytest
+```
+
+Optional database contract checks verify that the local PostgreSQL database has
+the expected source objects and columns:
+
+```sh
+RUN_DB_TESTS=1 pytest -m db
+```
+
+See `docs/testing.md` for scope and interpretation. The database checks do not
+rerun the full analysis pipeline; they are lightweight schema/source-presence
+checks intended to catch database drift.
+
 ## Versioning
 
 The intended journal-submission release tag is:
