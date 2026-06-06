@@ -47,14 +47,84 @@ def test_overlap_weighting_preserves_dv21_but_not_ct6() -> None:
     df = load_table("overlap_weighting_ato_comparison.csv")
 
     dv21 = one_row(df, Label="MO14\u2192DV21 (YPLL 2020-22)")
-    assert_close(dv21["ATO_ATE"], -201.253311, tol=1e-5)
+    assert_close(dv21["ATO_ATE"], -201.569538, tol=1e-5)
+    assert round(float(dv21["ATO_ATE"]), 1) == -201.6
     assert float(dv21["ATO_CI_Upper"]) < 0
     assert float(dv21["ATO_p"]) < 0.01
 
     ct6 = one_row(df, Label="MO14\u2192CT6 (Hospital Deaths 2023)")
-    assert_close(ct6["ATO_ATE"], -2.805245, tol=1e-5)
+    assert_close(ct6["ATO_ATE"], -2.802004, tol=1e-5)
     assert float(ct6["ATO_CI_Lower"]) < 0 < float(ct6["ATO_CI_Upper"])
     assert float(ct6["ATO_p"]) > 0.05
+
+
+def test_overlap_weighting_table_reconciles_with_primary_summary() -> None:
+    primary = load_table("primary_county_crossfit_summary.csv")
+    overlap = load_table("overlap_weighting_ato_comparison.csv")
+    label_map = {
+        "MO14\u2192DV21": "MO14\u2192DV21 (YPLL 2020-22)",
+        "MO14\u2192CT5": "MO14\u2192CT5 (YPLL 2023 Mid)",
+        "MO14\u2192CT6": "MO14\u2192CT6 (Hospital Deaths 2023)",
+        "MO21\u2192DV21": "MO21\u2192DV21 (YPLL 2020-22)",
+        "MO21\u2192CT5": "MO21\u2192CT5 (YPLL 2023 Mid)",
+        "MO21\u2192CT6": "MO21\u2192CT6 (Hospital Deaths 2023)",
+    }
+    for primary_label, overlap_label in label_map.items():
+        p = one_row(primary, Label=primary_label)
+        o = one_row(overlap, Label=overlap_label)
+        for col in [
+            "N",
+            "N_Treated",
+            "N_Control",
+            "Control_Mean",
+            "ATO_ATE",
+            "ATO_CI_Lower",
+            "ATO_CI_Upper",
+            "ATO_p",
+            "ATO_ESS",
+        ]:
+            assert_close(o[col], p[col], tol=1e-5)
+
+
+def test_hospital_confirmatory_headlines_match_main_text() -> None:
+    df = load_table("main_hospital_confirmatory_results.csv")
+
+    sep1 = one_row(df, result_id="mo11_sep1")
+    assert int(sep1["n"]) == 6166
+    assert_close(sep1["estimate"], 2.24, tol=1e-6)
+    assert_close(sep1["ci_lower"], 1.03, tol=1e-6)
+    assert_close(sep1["ci_upper"], 3.44, tol=1e-6)
+    assert_close(sep1["relative_change_pct"], 3.9, tol=1e-6)
+
+    pneumonia = one_row(df, result_id="mo14_pneumonia")
+    assert int(pneumonia["n"]) == 6166
+    assert_close(pneumonia["estimate"], -0.87, tol=1e-6)
+    assert_close(pneumonia["ci_lower"], -1.35, tol=1e-6)
+    assert_close(pneumonia["ci_upper"], -0.40, tol=1e-6)
+    assert_close(pneumonia["relative_change_pct"], -5.4, tol=1e-6)
+
+
+def test_access_inequality_headlines_match_main_text_and_si() -> None:
+    df = load_table("access_inequality_key_results.csv")
+
+    ai_coverage = one_row(df, result_id="coverage_ai_30min_2023")
+    robotics_coverage = one_row(df, result_id="coverage_robotics_30min_2023")
+    assert_close(ai_coverage["value"], 65.8, tol=1e-6)
+    assert_close(robotics_coverage["value"], 79.5, tol=1e-6)
+
+    ai_penalty = one_row(df, result_id="p90_p10_ratio_ai_2023")
+    assert_close(ai_penalty["value"], 32.3, tol=1e-6)
+    assert_close(one_row(df, result_id="p90_distance_ai_2023")["value"], 61.3, tol=1e-6)
+
+    assert_close(one_row(df, result_id="gini_all_hospitals_2023")["value"], 0.829, tol=1e-6)
+    assert_close(one_row(df, result_id="gini_robotics_2023")["value"], 0.776, tol=1e-6)
+    assert_close(one_row(df, result_id="gini_ai_2023")["value"], 0.740, tol=1e-6)
+
+    assert_close(one_row(df, result_id="ai_enabled_hospitals_2022")["value"], 1119, tol=1e-6)
+    assert_close(one_row(df, result_id="ai_enabled_hospitals_2024")["value"], 1743, tol=1e-6)
+    assert_close(one_row(df, result_id="ai_enabled_hospitals_growth_2022_2024")["value"], 56, tol=1e-6)
+    assert_close(one_row(df, result_id="ai_gini_2022")["value"], 0.739, tol=1e-6)
+    assert_close(one_row(df, result_id="ai_gini_2024")["value"], 0.767, tol=1e-6)
 
 
 def test_pre_exposure_checks_support_sep1_caution_on_pneumonia() -> None:

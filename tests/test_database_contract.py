@@ -47,7 +47,15 @@ REQUIRED_COLUMNS = {
         "gfeet",
     },
     "cms_2022_hospital_quality_long": {"facility_id", "snapshot", "measure_id", "score_numeric"},
-    "cms_hcris_2023_financial_capacity": {"provider_ccn"},
+    "cms_hcris_2023_financial_capacity": {
+        "provider_ccn",
+        "cash_and_temporary_investments",
+        "cash_operating_expense",
+        "total_revenue_for_margin",
+        "operating_margin",
+        "total_margin",
+        "days_cash_on_hand",
+    },
     "vw_hospital_level_aipw": {"aha_id", "cms_facility_id", "wfaiss", "wfaiart", "robohos"},
     "vw_county_file_export_wide": {
         "county_fips",

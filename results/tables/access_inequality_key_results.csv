@@ -1,0 +1,24 @@
+result_id,manuscript_location,metric,access_type,value,unit,source_note
+coverage_robotics_30min_2023,Main text Access Penalty,Population within 30-minute drive,Robotics,79.5,percent,"Manuscript-reported geospatial access summary; 266.0 million people."
+coverage_ai_30min_2023,Main text Access Penalty,Population within 30-minute drive,AI Automation,65.8,percent,"Manuscript-reported geospatial access summary; 220.1 million people."
+p10_distance_all_hospitals_2023,Main text Table 4,P10 population-weighted distance,All Hospitals,0.9,miles,Access Penalty table.
+p90_distance_all_hospitals_2023,Main text Table 4,P90 population-weighted distance,All Hospitals,11.1,miles,Access Penalty table.
+p90_p10_ratio_all_hospitals_2023,Main text Table 4,P90/P10 gap ratio,All Hospitals,12.3,ratio,Access Penalty table.
+p10_distance_robotics_2023,Main text Table 4,P10 population-weighted distance,Robotics,1.4,miles,Access Penalty table.
+p90_distance_robotics_2023,Main text Table 4,P90 population-weighted distance,Robotics,28.4,miles,Access Penalty table.
+p90_p10_ratio_robotics_2023,Main text Table 4,P90/P10 gap ratio,Robotics,20.3,ratio,Access Penalty table.
+p10_distance_ai_2023,Main text Table 4,P10 population-weighted distance,AI/Automation,1.9,miles,Access Penalty table.
+p90_distance_ai_2023,Main text Table 4,P90 population-weighted distance,AI/Automation,61.3,miles,Access Penalty table.
+p90_p10_ratio_ai_2023,Main text Table 4,P90/P10 gap ratio,AI/Automation,32.3,ratio,Access Penalty table.
+gini_all_hospitals_2023,SI Table S24,Gini,All hospitals,0.829,index,Distributional inequality in population-weighted travel distance.
+gini_robotics_2023,SI Table S24,Gini,Robotics-enabled hospitals,0.776,index,Distributional inequality in population-weighted travel distance.
+gini_ai_2023,SI Table S24,Gini,AI-enabled hospitals,0.740,index,Distributional inequality in population-weighted travel distance.
+ai_enabled_hospitals_2022,SI Table S20,AI-enabled hospitals,AI,1119,count,Multi-year diffusion/access comparison.
+ai_enabled_hospitals_2024,SI Table S20,AI-enabled hospitals,AI,1743,count,Multi-year diffusion/access comparison.
+ai_enabled_hospitals_growth_2022_2024,SI Table S20,AI-enabled hospitals change,AI,56,percent,Multi-year diffusion/access comparison.
+ai_population_coverage_2022,SI Table S20,Population within 30 minutes of AI,AI,66.2,percent,Multi-year diffusion/access comparison.
+ai_population_coverage_2024,SI Table S20,Population within 30 minutes of AI,AI,75.2,percent,Multi-year diffusion/access comparison.
+ai_population_coverage_change_2022_2024,SI Table S20,Population coverage change,AI,9.0,percentage points,Multi-year diffusion/access comparison.
+ai_gini_2022,SI Table S20,Gini,AI access 2022,0.739,index,Multi-year diffusion/access comparison.
+ai_gini_2024,SI Table S20,Gini,AI access 2024,0.767,index,Multi-year diffusion/access comparison.
+ai_gini_change_2022_2024,SI Table S20,Gini change,AI,0.028,index,Multi-year diffusion/access comparison.

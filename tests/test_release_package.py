@@ -18,6 +18,8 @@ REQUIRED_FILES = [
     "code/support/build_organizational_capacity_sensitivity.py",
     "sql/views/public.vw_hospital_aipw_with_placebo.sql",
     "sql/views/public.vw_county_tech_summary_adjpd.sql",
+    "results/tables/access_inequality_key_results.csv",
+    "results/tables/main_hospital_confirmatory_results.csv",
     "results/tables/primary_county_crossfit_summary.csv",
     "results/tables/revision_diagnostics/table_s28_organizational_capacity_aipw_sensitivity.csv",
 ]
@@ -55,6 +57,10 @@ def test_manifest_hashes_match_current_files() -> None:
 def test_public_package_does_not_include_restricted_raw_data() -> None:
     forbidden_patterns = [
         "data/raw",
+        "data/aha",
+        "data/licensed",
+        "data/restricted",
+        "data/public/aha",
         "data/public/cms_2022_hospital_quality/raw",
         "data/public/cms_2022_hospital_quality/archives",
         "data/public/cms_2022_hospital_quality/filtered",
@@ -64,5 +70,19 @@ def test_public_package_does_not_include_restricted_raw_data() -> None:
         for rel in forbidden_patterns
         if (REPO_ROOT / rel).exists() and any((REPO_ROOT / rel).rglob("*"))
     ]
+    forbidden_aha_files = sorted(
+        {
+            str(path.relative_to(REPO_ROOT))
+            for pattern in [
+                "data/**/*.dta",
+                "data/**/*aha*survey*.csv",
+                "data/**/*AHA*Survey*.csv",
+                "data/**/*aha_fy*.csv",
+                "data/**/*AHA*.xlsx",
+            ]
+            for path in REPO_ROOT.glob(pattern)
+            if path.is_file()
+        }
+    )
     assert not existing_forbidden, f"Restricted/raw data should not be committed: {existing_forbidden}"
-
+    assert not forbidden_aha_files, f"Licensed AHA source files should not be committed: {forbidden_aha_files}"

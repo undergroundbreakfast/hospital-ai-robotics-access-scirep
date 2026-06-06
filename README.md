@@ -73,8 +73,8 @@ psql "$DATABASE_URL" \
 ## Validation Tests
 
 The repository includes a pytest suite that validates the release package and
-the Paper 1 result artifacts cited in the manuscript and Supplementary
-Information:
+checks that committed result artifacts contain the key values reported in the
+manuscript and Supplementary Information:
 
 ```sh
 python -m pip install -r requirements-dev.txt
@@ -88,9 +88,10 @@ the expected source objects and columns:
 RUN_DB_TESTS=1 pytest -m db
 ```
 
-See `docs/testing.md` for scope and interpretation. The database checks do not
-rerun the full analysis pipeline; they are lightweight schema/source-presence
-checks intended to catch database drift.
+See `docs/testing.md` for scope and interpretation. These tests are artifact
+regression and database-contract checks. They do not rerun the licensed AHA
+pipeline end to end, and they do not independently parse the manuscript PDF or
+LaTeX source.
 
 ## Versioning
 
@@ -100,7 +101,10 @@ The intended journal-submission release tag is:
 v1.0.0
 ```
 
-Use the tag in the manuscript's Data Availability and Code Availability statements after the repository is pushed to GitHub.
+Use the release tag that corresponds exactly to the submitted manuscript in the
+Data Availability and Code Availability statements. If final test-suite or
+documentation corrections are included after `v1.0.0`, create and cite a new
+release tag rather than assuming the older tag contains those changes.
 
 ## License
 
