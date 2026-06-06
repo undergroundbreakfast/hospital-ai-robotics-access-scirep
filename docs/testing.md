@@ -46,12 +46,11 @@ The database tests are intentionally contract-level checks. They verify required
 objects, columns, and lightweight source-row presence without running the full
 analysis pipeline or scanning large views.
 
-The current local database contract includes one expected limitation: some raw
-AHA fields used for full organizational-capacity reruns (`ceamt`, `crnfte`,
-`ftern`, `gfeet`) may be absent from a slim AHA extract even though the released
-analysis views and result artifacts are present. The corresponding test is
-reported as `xfail` so this limitation remains visible without blocking artifact
-validation.
+The database contract checks the focused AHA 2024 extract used by the primary
+manuscript workflow and the broader `aha_survey_data` table that contains the
+raw organizational-capacity fields used in Reviewer 3 diagnostics (`ceamt`,
+`crnfte`, `ftern`, `gfeet`). These fields are not all present in every AHA
+extract table, so tests validate them against `aha_survey_data`.
 
 ## What A Failure Means
 
