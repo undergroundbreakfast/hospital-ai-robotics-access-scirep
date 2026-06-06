@@ -5976,7 +5976,7 @@ def plot_iptw_vs_ato_forest(overlap_df: pd.DataFrame, outcome_label: str, plot_d
     Create a forest plot comparing IPTW (standard) vs ATO (overlap-weighted) estimates.
     
     This visualization addresses reviewer concerns about positivity by showing that
-    effects remain robust even when restricting to the overlap population with best
+    adjusted associations can be compared in the overlap population with best
     covariate balance.
     
     Parameters:
@@ -6054,12 +6054,12 @@ def plot_iptw_vs_ato_forest(overlap_df: pd.DataFrame, outcome_label: str, plot_d
         
         # Add vertical line at zero
         ax.axvline(x=0, color='red', linestyle='--', linewidth=2, 
-                  label='Line of No Effect', zorder=0, alpha=0.7)
+                  label='No adjusted difference', zorder=0, alpha=0.7)
         
         # Formatting
         ax.set_yticks(y_positions)
         ax.set_yticklabels(labels, fontsize=10)
-        ax.set_xlabel(f'Average Treatment Effect on {outcome_label} (95% CI)', fontsize=13, fontweight='bold')
+        ax.set_xlabel(f'Adjusted mean difference in {outcome_label} (95% CI)', fontsize=13, fontweight='bold')
         ax.set_title('Robustness to Positivity: Standard IPTW vs Conservative Overlap Weighting (ATO)', 
                     fontsize=14, fontweight='bold', pad=20)
         
@@ -6067,10 +6067,10 @@ def plot_iptw_vs_ato_forest(overlap_df: pd.DataFrame, outcome_label: str, plot_d
         from matplotlib.lines import Line2D
         legend_elements = [
             Line2D([0], [0], marker='o', color='w', markerfacecolor='#1f77b4', 
-                   markersize=10, label='Standard IPTW (ATE)', markeredgecolor='black', markeredgewidth=1.5),
+                   markersize=10, label='Standard IPTW adjusted difference', markeredgecolor='black', markeredgewidth=1.5),
             Line2D([0], [0], marker='s', color='w', markerfacecolor='#ff7f0e', 
                    markersize=10, label='Conservative ATO (Overlap)', markeredgecolor='black', markeredgewidth=1.5),
-            Line2D([0], [0], color='red', linewidth=2, linestyle='--', label='No Effect')
+            Line2D([0], [0], color='red', linewidth=2, linestyle='--', label='No adjusted difference')
         ]
         ax.legend(handles=legend_elements, loc='lower right', frameon=True, fontsize=11, 
                  shadow=True, fancybox=True)
