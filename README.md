@@ -98,13 +98,14 @@ LaTeX source.
 The intended journal-submission release tag is:
 
 ```sh
-v1.0.0
+v1.0.2
 ```
 
 Use the release tag that corresponds exactly to the submitted manuscript in the
-Data Availability and Code Availability statements. If final test-suite or
-documentation corrections are included after `v1.0.0`, create and cite a new
-release tag rather than assuming the older tag contains those changes.
+Data Availability and Code Availability statements. If later test-suite,
+artifact, or documentation corrections are included after the cited tag, create
+and cite a new release tag rather than assuming an older tag contains those
+changes.
 
 ## License
 

@@ -9,7 +9,7 @@ authors:
     given-names: David
   - family-names: Harrison
     given-names: Teresa D.
-version: 1.0.0
-date-released: 2026-06-05
+version: 1.0.2
+date-released: 2026-06-06
 repository-code: "https://github.com/undergroundbreakfast/hospital-ai-robotics-access-scirep"
 license: MIT

@@ -5973,7 +5973,8 @@ def plot_forest_plot_ate(results_df: pd.DataFrame, outcome_label: str, plot_dir:
 def plot_iptw_vs_ato_forest(overlap_df: pd.DataFrame, outcome_label: str, plot_dir: str, 
                             logger, filename: str = "forest_plot_iptw_vs_ato.png"):
     """
-    Create a forest plot comparing IPTW (standard) vs ATO (overlap-weighted) estimates.
+    Create a forest plot comparing non-cross-fitted AIPW vs ATO (overlap-weighted)
+    adjusted mean differences.
     
     This visualization addresses reviewer concerns about positivity by showing that
     adjusted associations can be compared in the overlap population with best
@@ -6011,13 +6012,13 @@ def plot_iptw_vs_ato_forest(overlap_df: pd.DataFrame, outcome_label: str, plot_d
         
         y_pos = 0
         for idx, row in df.iterrows():
-            # IPTW estimate (standard)
+            # Non-cross-fitted AIPW estimate
             if not np.isnan(row['IPTW_ATE']):
                 y_positions.append(y_pos)
                 estimates.append(row['IPTW_ATE'])
                 ci_lowers.append(row['IPTW_CI_Lower'])
                 ci_uppers.append(row['IPTW_CI_Upper'])
-                labels.append(f"{row['Label']} - Standard IPTW")
+                labels.append(f"{row['Label']} - Non-cross-fitted AIPW")
                 colors.append('#1f77b4')  # Blue
                 markers.append('o')
                 y_pos += 1
@@ -6060,14 +6061,14 @@ def plot_iptw_vs_ato_forest(overlap_df: pd.DataFrame, outcome_label: str, plot_d
         ax.set_yticks(y_positions)
         ax.set_yticklabels(labels, fontsize=10)
         ax.set_xlabel(f'Adjusted mean difference in {outcome_label} (95% CI)', fontsize=13, fontweight='bold')
-        ax.set_title('Robustness to Positivity: Standard IPTW vs Conservative Overlap Weighting (ATO)', 
+        ax.set_title('Robustness to Positivity: Non-cross-fitted AIPW vs Conservative Overlap Weighting (ATO)', 
                     fontsize=14, fontweight='bold', pad=20)
         
         # Legend
         from matplotlib.lines import Line2D
         legend_elements = [
             Line2D([0], [0], marker='o', color='w', markerfacecolor='#1f77b4', 
-                   markersize=10, label='Standard IPTW adjusted difference', markeredgecolor='black', markeredgewidth=1.5),
+                   markersize=10, label='Non-cross-fitted AIPW adjusted difference', markeredgecolor='black', markeredgewidth=1.5),
             Line2D([0], [0], marker='s', color='w', markerfacecolor='#ff7f0e', 
                    markersize=10, label='Conservative ATO (Overlap)', markeredgecolor='black', markeredgewidth=1.5),
             Line2D([0], [0], color='red', linewidth=2, linestyle='--', label='No adjusted difference')
