@@ -3123,7 +3123,7 @@ def plot_delta_mortality_results(delta_df: pd.DataFrame, plot_dir: str, logger=N
         ax1.set_yticklabels(plot_df['Label'], fontsize=11)
         ax1.set_xlabel('Change in YPLL per 100k (2023 - 2019)\nNegative = Improvement', 
                       fontsize=12, fontweight='bold')
-        ax1.set_title('AI/Robotics Impact on Mortality Change (2019→2023)\nAverage Treatment Effect on YPLL Reduction', 
+        ax1.set_title('AI/Robotics Associations With Mortality Change (2019→2023)\nAdjusted Mean Difference in YPLL Change', 
                      fontsize=14, fontweight='bold', pad=20)
         ax1.grid(True, alpha=0.3, axis='x')
         
@@ -5888,7 +5888,7 @@ def plot_continuous_moderator_surface(
 def plot_forest_plot_ate(results_df: pd.DataFrame, outcome_label: str, plot_dir: str, logger, 
                          treatment_filter: list = None, filename: str = "forest_plot_ate.png"):
     """
-    Create a forest plot showing ATE estimates with 95% CIs.
+    Create a forest plot showing adjusted mean differences with 95% CIs.
     
     Parameters:
     -----------
@@ -5938,16 +5938,16 @@ def plot_forest_plot_ate(results_df: pd.DataFrame, outcome_label: str, plot_dir:
                          df['AIPW_CI_Upper'] - df['AIPW_ATE']],
                    fmt='o', color='#1f77b4', markersize=8, 
                    capsize=5, capthick=2, linewidth=2,
-                   label='ATE and 95% CI')
+                   label='Adjusted mean difference and 95% CI')
         
         # Add vertical line at zero
         ax.axvline(x=0, color='red', linestyle='--', linewidth=1.5, 
-                  label='Line of No Effect', zorder=0)
+                  label='No adjusted difference', zorder=0)
         
         # Formatting
         ax.set_yticks(y_positions)
         ax.set_yticklabels(df['Label'])
-        ax.set_xlabel(f'Average Treatment Effect (ATE) on {outcome_label}', fontsize=12)
+        ax.set_xlabel(f'Adjusted mean difference in {outcome_label}', fontsize=12)
         ax.set_ylabel('Technology Component', fontsize=12)
         ax.set_title(f'Adjusted Associations of Technology Adoption on {outcome_label}', 
                     fontsize=14, fontweight='bold', pad=20)
