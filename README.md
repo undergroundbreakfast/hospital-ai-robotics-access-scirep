@@ -98,7 +98,7 @@ LaTeX source.
 The intended journal-submission release tag is:
 
 ```sh
-v1.0.2
+v1.0.3
 ```
 
 Use the release tag that corresponds exactly to the submitted manuscript in the

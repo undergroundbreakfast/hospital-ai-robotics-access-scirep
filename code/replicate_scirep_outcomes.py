@@ -6060,7 +6060,7 @@ def plot_iptw_vs_ato_forest(overlap_df: pd.DataFrame, outcome_label: str, plot_d
         # Formatting
         ax.set_yticks(y_positions)
         ax.set_yticklabels(labels, fontsize=10)
-        ax.set_xlabel(f'Adjusted mean difference in {outcome_label} (95% CI)', fontsize=13, fontweight='bold')
+        ax.set_xlabel('Adjusted mean difference, outcome-specific units (95% CI)', fontsize=13, fontweight='bold')
         ax.set_title('Robustness to Positivity: Non-cross-fitted AIPW vs Conservative Overlap Weighting (ATO)', 
                     fontsize=14, fontweight='bold', pad=20)
         
