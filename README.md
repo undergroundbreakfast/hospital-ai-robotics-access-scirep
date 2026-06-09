@@ -2,7 +2,7 @@
 
 This repository contains reproducibility code and redistributable artifacts for the revised Scientific Reports manuscript:
 
-**Hospital AI and Robotics Adoption, Access Inequality, and County Mortality: A National Study Across 3,143 U.S. Counties**
+**Hospital AI and Robotics Adoption and Access Inequality in the United States**
 
 The package is intentionally scoped for public release. It includes analysis scripts, SQL view definitions, derived aggregate county-level artifacts, manuscript figures, and summary tables. It does **not** include licensed American Hospital Association (AHA) Annual Survey hospital-level source files or hospital-level AHA-derived analytic datasets.
 
@@ -98,7 +98,7 @@ LaTeX source.
 The intended journal-submission release tag is:
 
 ```sh
-v1.0.3
+v1.0.4
 ```
 
 Use the release tag that corresponds exactly to the submitted manuscript in the
