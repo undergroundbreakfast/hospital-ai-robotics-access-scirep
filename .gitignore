@@ -25,3 +25,16 @@ code/shapefiles/
 code/tile_cache/
 code/publication_outputs/
 code/figures/
+
+# Generated outputs are reviewed explicitly before promotion into results/.
+outputs/
+data/restricted/
+code/support/*_dataset.csv
+code/support/*analysis_dataset.csv
+code/support/archives/
+code/support/raw/
+code/support/processed/
+code/support/filtered/
+.pytest_cache/
+.mypy_cache/
+*.part

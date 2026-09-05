@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW public.vw_hospital_aipw_with_placebo AS
+CREATE OR REPLACE VIEW public."vw_hospital_aipw_with_placebo" AS
  SELECT cw.aha_id,
     cw.cms_facility_id,
     cw.aha_county_fips,

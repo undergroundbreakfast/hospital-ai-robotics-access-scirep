@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW public.vw_irr_cdc_wonder_mortality_2023 AS
+CREATE OR REPLACE VIEW public."vw_irr_cdc_wonder_mortality_2023" AS
  SELECT m.county,
     m.county_code,
     m.deaths,

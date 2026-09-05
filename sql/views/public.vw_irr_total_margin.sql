@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW public.vw_irr_total_margin AS
+CREATE OR REPLACE VIEW public."vw_irr_total_margin" AS
  SELECT mh.aha_id,
     mh.total_margin AS dv,
     hhe.irr_county_value AS iv,

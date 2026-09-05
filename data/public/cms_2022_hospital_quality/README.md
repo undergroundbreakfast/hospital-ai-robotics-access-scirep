@@ -69,5 +69,7 @@ duplicating them.
 After replacing or refreshing the archives, rebuild the filtered CSVs with:
 
 ```sh
-python code/support/build_cms_2022_quality_extract.py
+python code/support/build_cms_2022_quality_extract.py --download
 ```
+
+The script resolves all paths from the repository root. Omit `--download` when the archives are already present.

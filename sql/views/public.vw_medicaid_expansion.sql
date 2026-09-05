@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW public.vw_medicaid_expansion AS
+CREATE OR REPLACE VIEW public."vw_medicaid_expansion" AS
  SELECT lpad(hhd.county_fips_code::text, 5, '0'::text) AS county_fips_code,
     hhd.state_name,
     hhd.irr_county_value,

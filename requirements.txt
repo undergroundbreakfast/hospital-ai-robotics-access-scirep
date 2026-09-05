@@ -1,19 +1,332 @@
-numpy
-pandas
-scipy
-statsmodels
-scikit-learn
-sqlalchemy
-psycopg2-binary
-psycopg[binary]
-zepid
-matplotlib
-seaborn
-geopandas
-shapely
-tqdm
-contextily
-esda
-libpysal
-splot
-cartopy
+affine==3.0.1
+    # via rasterio
+attrs==26.1.0
+    # via
+    #   affine
+    #   rasterio
+beautifulsoup4==4.15.0
+    # via libpysal
+cartopy==0.25.0
+    # via -r requirements.in
+certifi==2026.7.22
+    # via
+    #   pyogrio
+    #   pyproj
+    #   rasterio
+    #   requests
+charset-normalizer==3.5.1
+    # via requests
+click==8.5.0
+    # via
+    #   click-plugins
+    #   cligj
+    #   mercantile
+    #   rasterio
+click-plugins==1.1.1.2 ; python_full_version < '3.12'
+    # via rasterio
+cligj==0.7.2 ; python_full_version < '3.12'
+    # via rasterio
+cloudpickle==3.1.2
+    # via
+    #   joblib
+    #   shap
+colorama==0.4.6 ; sys_platform == 'win32'
+    # via tqdm
+contextily==1.7.1
+    # via -r requirements.in
+contourpy==1.3.3
+    # via matplotlib
+cycler==0.12.1
+    # via matplotlib
+econml==0.16.0
+    # via -r requirements.in
+esda==2.9.0 ; python_full_version < '3.12'
+    # via
+    #   -r requirements.in
+    #   giddy
+    #   splot
+esda==2.10.0 ; python_full_version >= '3.12'
+    # via
+    #   -r requirements.in
+    #   giddy
+    #   splot
+fonttools==4.64.0
+    # via matplotlib
+geographiclib==2.1
+    # via geopy
+geopandas==1.1.4
+    # via
+    #   -r requirements.in
+    #   esda
+    #   libpysal
+    #   splot
+geopy==2.5.0
+    # via contextily
+giddy==2.3.6 ; python_full_version < '3.12'
+    # via splot
+giddy==2.3.9 ; python_full_version >= '3.12'
+    # via splot
+greenlet==3.5.5 ; platform_machine == 'AMD64' or platform_machine == 'WIN32' or platform_machine == 'aarch64' or platform_machine == 'amd64' or platform_machine == 'ppc64le' or platform_machine == 'win32' or platform_machine == 'x86_64'
+    # via sqlalchemy
+idna==3.19
+    # via requests
+jinja2==3.1.6
+    # via libpysal
+joblib==1.6.0
+    # via
+    #   contextily
+    #   econml
+    #   scikit-learn
+kiwisolver==1.5.1
+    # via matplotlib
+libpysal==4.14.1 ; python_full_version < '3.12'
+    # via
+    #   -r requirements.in
+    #   esda
+    #   giddy
+    #   splot
+    #   spreg
+libpysal==4.15.0 ; python_full_version >= '3.12'
+    # via
+    #   -r requirements.in
+    #   esda
+    #   giddy
+    #   splot
+    #   spreg
+lightgbm==4.7.0
+    # via econml
+llvmlite==0.49.0
+    # via numba
+mapclassify==2.10.0 ; python_full_version < '3.12'
+    # via
+    #   giddy
+    #   splot
+mapclassify==2.11.0 ; python_full_version >= '3.12'
+    # via
+    #   giddy
+    #   splot
+markupsafe==3.0.3
+    # via jinja2
+matplotlib==3.11.1
+    # via
+    #   -r requirements.in
+    #   cartopy
+    #   contextily
+    #   giddy
+    #   seaborn
+    #   splot
+    #   zepid
+mercantile==1.2.1
+    # via contextily
+mpmath==1.3.0
+    # via sympy
+narwhals==2.25.0
+    # via
+    #   lightgbm
+    #   plotly
+networkx==3.6.1
+    # via mapclassify
+numba==0.67.0
+    # via
+    #   quantecon
+    #   shap
+    #   sparse
+numpy==2.2.6
+    # via
+    #   -r requirements.in
+    #   cartopy
+    #   contourpy
+    #   econml
+    #   esda
+    #   geopandas
+    #   libpysal
+    #   lightgbm
+    #   mapclassify
+    #   matplotlib
+    #   numba
+    #   pandas
+    #   patsy
+    #   pygam
+    #   pyogrio
+    #   quantecon
+    #   rasterio
+    #   scikit-learn
+    #   scipy
+    #   seaborn
+    #   shap
+    #   shapely
+    #   sparse
+    #   splot
+    #   spreg
+    #   statsmodels
+    #   zepid
+packaging==26.3
+    # via
+    #   cartopy
+    #   econml
+    #   geopandas
+    #   libpysal
+    #   matplotlib
+    #   patsy
+    #   plotly
+    #   pyogrio
+    #   shap
+    #   splot
+    #   statsmodels
+pandas==2.3.3
+    # via
+    #   -r requirements.in
+    #   econml
+    #   esda
+    #   geopandas
+    #   libpysal
+    #   mapclassify
+    #   seaborn
+    #   shap
+    #   spreg
+    #   statsmodels
+    #   zepid
+patsy==1.0.3
+    # via
+    #   statsmodels
+    #   zepid
+pillow==12.3.0
+    # via
+    #   -r requirements.in
+    #   contextily
+    #   matplotlib
+platformdirs==4.11.7
+    # via libpysal
+plotly==7.0.0
+    # via -r requirements.in
+progressbar2==4.6.0
+    # via pygam
+psycopg==3.3.5
+    # via -r requirements.in
+psycopg-binary==3.3.5 ; implementation_name != 'pypy'
+    # via psycopg
+psycopg2-binary==2.9.12
+    # via -r requirements.in
+pygam==0.12.0
+    # via -r requirements.in
+pyogrio==0.13.0
+    # via geopandas
+pyparsing==3.3.2
+    # via
+    #   matplotlib
+    #   rasterio
+pyproj==3.7.2
+    # via
+    #   cartopy
+    #   geopandas
+pyshp==3.1.6
+    # via cartopy
+python-dateutil==2.9.0.post0
+    # via
+    #   matplotlib
+    #   pandas
+python-utils==4.0.1
+    # via progressbar2
+pytz==2026.3.post1
+    # via pandas
+quantecon==0.11.4
+    # via giddy
+rasterio==1.4.4 ; python_full_version < '3.12'
+    # via contextily
+rasterio==1.5.1 ; python_full_version >= '3.12'
+    # via contextily
+requests==2.34.2
+    # via
+    #   contextily
+    #   libpysal
+    #   quantecon
+scikit-learn==1.6.1
+    # via
+    #   -r requirements.in
+    #   econml
+    #   esda
+    #   libpysal
+    #   mapclassify
+    #   shap
+    #   spreg
+    #   zepid
+scipy==1.15.3
+    # via
+    #   -r requirements.in
+    #   econml
+    #   esda
+    #   giddy
+    #   libpysal
+    #   lightgbm
+    #   mapclassify
+    #   pygam
+    #   quantecon
+    #   scikit-learn
+    #   shap
+    #   spreg
+    #   statsmodels
+    #   zepid
+seaborn==0.13.2
+    # via
+    #   -r requirements.in
+    #   giddy
+    #   splot
+setuptools==80.10.2
+    # via -r requirements.in
+shap==0.48.0
+    # via econml
+shapely==2.1.2
+    # via
+    #   -r requirements.in
+    #   cartopy
+    #   esda
+    #   geopandas
+    #   libpysal
+six==1.17.0
+    # via python-dateutil
+slicer==0.0.8
+    # via shap
+soupsieve==2.9.2
+    # via beautifulsoup4
+sparse==0.19.2
+    # via econml
+splot==1.1.7
+    # via -r requirements.in
+spreg==1.9.0 ; python_full_version < '3.12'
+    # via splot
+spreg==1.9.1 ; python_full_version >= '3.12'
+    # via splot
+sqlalchemy==2.0.52
+    # via -r requirements.in
+statsmodels==0.14.6
+    # via
+    #   -r requirements.in
+    #   econml
+    #   zepid
+sympy==1.14.0
+    # via quantecon
+tabulate==0.10.0
+    # via zepid
+threadpoolctl==3.6.0
+    # via scikit-learn
+tqdm==4.70.0
+    # via
+    #   -r requirements.in
+    #   shap
+typing-extensions==4.16.0
+    # via
+    #   beautifulsoup4
+    #   psycopg
+    #   python-utils
+    #   shap
+    #   sqlalchemy
+tzdata==2026.3
+    # via
+    #   pandas
+    #   psycopg
+urllib3==2.7.0
+    # via requests
+xyzservices==2026.9.1
+    # via contextily
+zepid==0.9.1
+    # via -r requirements.in

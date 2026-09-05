@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW public.vw_county_tech_summary_adjpd AS
+CREATE OR REPLACE VIEW public."vw_county_tech_summary_adjpd" AS
  WITH hospital_tech AS (
          SELECT lpad(aha_survey_data.fcounty::text, 5, '0'::text) AS county_fips,
             COALESCE(aha_survey_data.adjpd, '0'::character varying)::integer AS adjpd,

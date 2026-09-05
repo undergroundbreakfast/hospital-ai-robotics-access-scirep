@@ -22,24 +22,19 @@ import os
 from pathlib import Path
 from typing import Iterable
 
-ROOT = Path(__file__).resolve().parent
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from scirep_config import connect_db, output_directory, restricted_directory
+
+ROOT = output_directory("organizational_capacity")
 
 import numpy as np
 import pandas as pd
 import psycopg
 
 
-def connect() -> psycopg.Connection:
-    password = os.getenv("POSTGRESQL_KEY") or os.getenv("PGPASSWORD")
-    if not password:
-        raise SystemExit("Set POSTGRESQL_KEY or PGPASSWORD before running this script.")
-    return psycopg.connect(
-        host=os.getenv("POSTGRES_HOST", os.getenv("PGHOST", "localhost")),
-        port=int(os.getenv("POSTGRES_PORT", os.getenv("PGPORT", "5432"))),
-        dbname=os.getenv("POSTGRES_DB", os.getenv("PGDATABASE", "Research_TEST")),
-        user=os.getenv("POSTGRES_USER", os.getenv("PGUSER", "postgres")),
-        password=password,
-    )
+def connect():
+    return connect_db()
 
 
 def read_sql(conn: psycopg.Connection, sql: str) -> pd.DataFrame:
@@ -659,7 +654,7 @@ def main() -> None:
 
     balance.to_csv(ROOT / "organizational_capacity_balance.csv", index=False)
     aipw_df.to_csv(ROOT / "organizational_capacity_aipw_sensitivity.csv", index=False)
-    hospitals.to_csv(ROOT / "organizational_capacity_hospital_dataset.csv", index=False)
+    hospitals.to_csv(restricted_directory("organizational_capacity") / "organizational_capacity_hospital_dataset.csv", index=False)
     counties.to_csv(ROOT / "organizational_capacity_county_dataset.csv", index=False)
     write_latex(balance, aipw_df)
 

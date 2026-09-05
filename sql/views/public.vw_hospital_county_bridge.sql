@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW public.vw_hospital_county_bridge AS
+CREATE OR REPLACE VIEW public."vw_hospital_county_bridge" AS
  WITH crosswalk_src AS (
          SELECT NULLIF(TRIM(BOTH FROM to_jsonb(x.*) ->> 'cms_facility_id'::text), ''::text) AS cms_facility_id_raw,
             NULLIF(TRIM(BOTH FROM to_jsonb(x.*) ->> 'aha_id'::text), ''::text) AS aha_id_raw,

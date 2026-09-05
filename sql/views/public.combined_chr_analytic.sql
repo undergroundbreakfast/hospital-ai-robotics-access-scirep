@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW public.combined_chr_analytic AS
+CREATE OR REPLACE VIEW public."combined_chr_analytic" AS
  SELECT a._5_digit_fips,
     a.premature_death_aian,
     a.premature_death_asian_pacific_islander,

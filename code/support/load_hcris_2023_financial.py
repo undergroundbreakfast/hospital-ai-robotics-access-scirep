@@ -24,7 +24,11 @@ import re
 import urllib.request
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from scirep_config import connect_db, output_directory
+
+ROOT = output_directory("hcris_2023")
 
 import psycopg
 from psycopg import sql
@@ -42,17 +46,8 @@ VIEW_NAME = "vw_cms_hcris_2023_financial_capacity"
 DERIVED_TABLE_NAME = "cms_hcris_2023_financial_capacity"
 
 
-def connect() -> psycopg.Connection:
-    password = os.getenv("POSTGRESQL_KEY") or os.getenv("PGPASSWORD")
-    if not password:
-        raise SystemExit("Set POSTGRESQL_KEY or PGPASSWORD before running this script.")
-    return psycopg.connect(
-        host=os.getenv("POSTGRES_HOST", os.getenv("PGHOST", "localhost")),
-        port=int(os.getenv("POSTGRES_PORT", os.getenv("PGPORT", "5432"))),
-        dbname=os.getenv("POSTGRES_DB", os.getenv("PGDATABASE", "Research_TEST")),
-        user=os.getenv("POSTGRES_USER", os.getenv("PGUSER", "postgres")),
-        password=password,
-    )
+def connect():
+    return connect_db()
 
 
 def snake_case(name: str) -> str:

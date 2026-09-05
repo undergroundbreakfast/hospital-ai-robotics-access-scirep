@@ -19,6 +19,9 @@ def test_primary_county_headline_estimates_match_manuscript() -> None:
     assert_close(mo14_ct6["Crossfit_AIPW_ATE"], -25.492859, tol=1e-5)
     assert_close(mo14_ct6["Crossfit_Relative_Change_Pct"], -9.900592, tol=1e-5)
     assert float(mo14_ct6["Crossfit_AIPW_p"]) < 0.001
+    assert_close(mo14_ct6["Crossfit_AIPW_CI_Lower"], -37.79750234540421)
+    assert_close(mo14_ct6["Crossfit_AIPW_CI_Upper"], -13.188214671331641)
+    assert_close(mo14_ct6["Crossfit_ESS"], 413.00842277059695)
 
     mo21_ct6 = one_row(df, Label="MO21\u2192CT6")
     assert_close(mo21_ct6["Crossfit_AIPW_ATE"], -25.800115, tol=1e-5)
@@ -90,14 +93,16 @@ def test_hospital_confirmatory_headlines_match_main_text() -> None:
     df = load_table("main_hospital_confirmatory_results.csv")
 
     sep1 = one_row(df, result_id="mo11_sep1")
-    assert int(sep1["n"]) == 6166
+    assert int(sep1["source_frame_n"]) == 6166
+    assert int(sep1["model_n"]) == 2272
     assert_close(sep1["estimate"], 2.24, tol=1e-6)
     assert_close(sep1["ci_lower"], 1.03, tol=1e-6)
     assert_close(sep1["ci_upper"], 3.44, tol=1e-6)
     assert_close(sep1["relative_change_pct"], 3.9, tol=1e-6)
 
     pneumonia = one_row(df, result_id="mo14_pneumonia")
-    assert int(pneumonia["n"]) == 6166
+    assert int(pneumonia["source_frame_n"]) == 6166
+    assert int(pneumonia["model_n"]) == 2795
     assert_close(pneumonia["estimate"], -0.87, tol=1e-6)
     assert_close(pneumonia["ci_lower"], -1.35, tol=1e-6)
     assert_close(pneumonia["ci_upper"], -0.40, tol=1e-6)

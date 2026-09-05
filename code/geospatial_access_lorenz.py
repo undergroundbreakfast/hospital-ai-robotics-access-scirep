@@ -35,6 +35,7 @@
 #   7. Generates publication-quality maps and figures.
 # ==============================================================================
 import os
+from scirep_config import create_db_engine
 import sys
 import logging
 import warnings
@@ -152,22 +153,12 @@ def setup_environment():
 
 # ======================= DATA LOADING & PREPROCESSING =======================
 def connect_to_db():
-    """Establishes a connection to the PostgreSQL database."""
-    try:
-        db_password = os.getenv("POSTGRESQL_KEY")
-        if not db_password:
-            raise ValueError("POSTGRESQL_KEY environment variable not set.")
-        engine = create_engine(
-            f"postgresql+psycopg2://{os.getenv('PGUSER', 'postgres')}:{db_password}@{os.getenv('PGHOST', 'localhost')}/{os.getenv('PGDATABASE', 'Research_TEST')}",
-            pool_pre_ping=True, connect_args={"connect_timeout": 10},
-        )
-        with engine.connect() as conn:
-            conn.execute(text("SELECT 1"))
-        logging.info(f"Postgres connection successful: {engine.url.host}/{engine.url.database}")
-        return engine
-    except Exception as e:
-        logging.exception("FATAL: Failed to connect to PostgreSQL database.")
-        sys.exit(1)
+    """Connect using the documented PG* settings; never interpolate a password."""
+    engine = create_db_engine()
+    with engine.connect() as conn:
+        conn.execute(text("SELECT 1"))
+    logging.info("Connected to the configured PostgreSQL database.")
+    return engine
 
 def load_hospital_data(engine):
     """Loads hospital data from the aha_fy2024 table with purchased geocoding data."""

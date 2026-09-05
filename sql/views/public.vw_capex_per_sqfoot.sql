@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW public.vw_capex_per_sqfoot AS
+CREATE OR REPLACE VIEW public."vw_capex_per_sqfoot" AS
  SELECT a.id,
     a.fcounty,
     a.mname,

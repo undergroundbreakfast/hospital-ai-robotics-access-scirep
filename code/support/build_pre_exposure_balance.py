@@ -24,7 +24,11 @@ import statsmodels.formula.api as smf
 from sqlalchemy import create_engine
 
 
-ROOT = Path(__file__).resolve().parent
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from scirep_config import create_db_engine, output_directory, restricted_directory
+
+ROOT = output_directory("pre_exposure")
 
 
 @dataclass(frozen=True)
@@ -89,14 +93,7 @@ def getenv(name: str, default: str | None = None) -> str | None:
 
 
 def connect():
-    host = getenv("POSTGRES_HOST", getenv("PGHOST", "localhost"))
-    port = getenv("POSTGRES_PORT", getenv("PGPORT", "5432"))
-    db = getenv("POSTGRES_DB", getenv("PGDATABASE", "Research_TEST"))
-    user = getenv("POSTGRES_USER", getenv("PGUSER", "postgres"))
-    password = getenv("POSTGRESQL_KEY", getenv("PGPASSWORD"))
-    if not password:
-        raise SystemExit("Set POSTGRESQL_KEY or PGPASSWORD before running this script.")
-    return create_engine(f"postgresql+psycopg2://{user}:{password}@{host}:{port}/{db}")
+    return create_db_engine()
 
 
 def sql_dataset() -> str:
@@ -432,7 +429,7 @@ def main() -> None:
         "pn_2022_apr",
         "pn_public_update_2019_to_2022_apr",
     ]
-    df[dataset_cols].to_csv(ROOT / "pre_exposure_analysis_dataset.csv", index=False)
+    df[dataset_cols].to_csv(restricted_directory("pre_exposure") / "pre_exposure_analysis_dataset.csv", index=False)
 
     transitions = []
     for exposure, label in [

@@ -1,112 +1,71 @@
-# Hospital AI/Robotics Access and Outcomes - Scientific Reports Reproducibility Package
+# Hospital AI and robotics adoption and access inequality in the United States
 
-This repository contains reproducibility code and redistributable artifacts for the revised Scientific Reports manuscript:
+Research code and aggregate artifacts accompanying the article accepted by **Scientific Reports** on 31 August 2026 (Johnson, Gefen, and Harrison).
 
-**Hospital AI and Robotics Adoption and Access Inequality in the United States**
+**Publication companion candidate: v1.0.5.** The previously submitted version is [v1.0.4](https://github.com/undergroundbreakfast/hospital-ai-robotics-access-scirep/tree/v1.0.4). See [CHANGELOG.md](CHANGELOG.md) for package corrections and [result provenance](docs/result_provenance.md) for the CT6 proof discrepancy. Statistical result estimates have not been changed to match proof text.
 
-The package is intentionally scoped for public release. It includes analysis scripts, SQL view definitions, derived aggregate county-level artifacts, manuscript figures, and summary tables. It does **not** include licensed American Hospital Association (AHA) Annual Survey hospital-level source files or hospital-level AHA-derived analytic datasets.
+Article DOI supplied in the publisher proof: [10.1038/s41598-026-70027-1](https://doi.org/10.1038/s41598-026-70027-1). The DOI may not resolve until publication. Citation metadata is in [CITATION.cff](CITATION.cff).
 
-## Repository Contents
+## What can be reproduced
 
-- `code/`: Python workflows for the main county/hospital analyses, geospatial access and Lorenz/Gini calculations, moderation plots, and reviewer-response diagnostics.
-- `sql/views/`: SQL view definitions used to build the linked analytic tables in PostgreSQL.
-- `results/tables/`: generated summary tables and sensitivity-analysis outputs used in the manuscript and Supplementary Information.
-- `results/tables/revision_diagnostics/`: reviewer-response outputs for the pre-exposure CMS check, system-membership diagnostic, and organizational-capacity diagnostic.
-- `results/figures/`: manuscript and supplementary figure artifacts.
-- `data/derived/county/`: redistributable county-level aggregate analytic file for the organizational-capacity sensitivity analysis.
-- `data/public/`: source notes and manifests for public CMS/HCRIS inputs.
-- `docs/`: short notes mapping reviewer-response diagnostics to manuscript tables.
+The public package contains analysis code, SQL transformations, aggregate county data, and archived figures/results. It excludes licensed AHA hospital records and generated hospital-level analytic datasets. **Offline checks validate the archived artifacts and package; they do not rerun the study.** Full analysis requires licensed AHA data and the prepared public inputs described in [database setup](docs/database_setup.md) and [geographic inputs](docs/geographic_inputs.md).
 
-## Data Availability Boundaries
+The Python 3.11 dependency snapshot is a newly tested compatibility environment, not a recovered lockfile from the original analysis. The recovered SQL definitions are identified in [schema provenance](docs/recovered_schema.json). Building an empty schema is not evidence that a fresh source-data load reproduces all published estimates.
 
-The AHA Annual Survey data were used under a third-party data-use license and cannot be redistributed here. The code assumes that licensed AHA files have been loaded into a local PostgreSQL database under the table/view names referenced in `sql/views/` and the scripts.
+## Quick offline checks
 
-Public data sources used by the workflows include:
+From a clone of the repository, with Python 3.11:
 
-- CMS Provider Data hospital outcomes: <https://data.cms.gov/provider-data/topics/hospitals>
-- CDC WONDER mortality data: <https://wonder.cdc.gov/>
-- County Health Rankings & Roadmaps: <https://www.countyhealthrankings.org/health-data>
-- CMS HCRIS cost report public-use files: <https://www.cms.gov/data-research/statistics-trends-and-reports/cost-reports>
+```sh
+python3.11 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-test.txt
+python -m pytest -q
+```
 
-## Environment
+These checks need no AHA data or database credentials. CI runs the artifact checks and builds the SQL schema in an empty PostgreSQL 16 service.
 
-Python 3.11 was used for the revision analyses. Install the core dependencies with:
+## Analysis environment and database
 
 ```sh
 python -m pip install -r requirements.txt
-```
-
-Database connection settings are read from environment variables:
-
-```sh
 export PGHOST=localhost
 export PGPORT=5432
 export PGDATABASE=Research_TEST
 export PGUSER=postgres
-# Set PGPASSWORD or POSTGRESQL_KEY in your shell or secret manager.
+# Set PGPASSWORD securely in the shell; do not commit it.
 ```
 
-The scripts also accept `POSTGRESQL_KEY` as a password environment variable for compatibility with the author's local workflow.
+All workflows use these PG settings. The legacy `POSTGRES_HOST`, `POSTGRES_PORT`, `POSTGRES_DB`, `POSTGRES_USER`, and `POSTGRESQL_KEY` variables remain supported when the corresponding PG setting is absent. Standard PG settings take precedence. Passwords containing URL punctuation are supported.
 
-## Main Workflows
+Follow [database_setup.md](docs/database_setup.md) before running analyses; the scripts expect prepared input tables, not arbitrary raw files.
 
-Run from the repository root after the PostgreSQL database has been prepared:
+## Workflows and generated outputs
+
+The ordered commands are in [docs/run_order.md](docs/run_order.md). Main workflows:
 
 ```sh
 python code/replicate_scirep_outcomes.py
 python code/geospatial_access_lorenz.py
 python code/generate_moderation_plots.py
-python code/support/build_pre_exposure_balance.py
-python code/support/build_system_membership_sensitivity.py
-python code/support/build_organizational_capacity_sensitivity.py
 ```
 
-The CMS 2022 public-reporting snapshots used for the pre-exposure balance check can be rebuilt with:
+Support analyses write under ignored `outputs/`. Hospital-level analytic exports go under ignored `data/restricted/`. Mapping caches and source geography stay under ignored `code/shapefiles/` and related paths. Archived publication outputs in `results/` are updated only after comparison and review; [the output map](docs/run_order.md) identifies which generated files correspond to them.
 
-```sh
-python code/support/build_cms_2022_quality_extract.py
-psql "$DATABASE_URL" \
-  -v cms_2022_csv="data/public/cms_2022_hospital_quality/filtered/cms_2022_hospital_quality_long.csv" \
-  -f sql/load_cms_2022_hospital_quality.psql.sql
-```
+## Repository contents
 
-## Validation Tests
+- `code/`: outcome, mapping, moderation, and support workflows.
+- `sql/`: source-column contracts, required functions, dependency-ordered view setup, and the CMS loader.
+- `results/`: archived aggregate results and manuscript figures.
+- `data/derived/county/`: an aggregate county dataset for the capacity sensitivity analysis.
+- `data/public/`: public-data source notes and extract manifests.
+- `docs/`: setup, interpretation, and provenance notes.
+- `tests/`: offline and optional database-contract checks.
 
-The repository includes a pytest suite that validates the release package and
-checks that committed result artifacts contain the key values reported in the
-manuscript and Supplementary Information:
+## Data sources and boundaries
 
-```sh
-python -m pip install -r requirements-dev.txt
-pytest
-```
+AHA Annual Survey files must be obtained under the relevant data-use agreement from [AHA Data](https://www.ahadata.com/aha-annual-survey-database). They are not redistributed here. Public inputs include [CMS hospital data](https://data.cms.gov/provider-data/topics/hospitals), [CDC WONDER](https://wonder.cdc.gov/), [County Health Rankings](https://www.countyhealthrankings.org/health-data), [CMS cost reports](https://www.cms.gov/data-research/statistics-trends-and-reports/cost-reports), and Census geography/population data.
 
-Optional database contract checks verify that the local PostgreSQL database has
-the expected source objects and columns:
+## License and releases
 
-```sh
-RUN_DB_TESTS=1 pytest -m db
-```
-
-See `docs/testing.md` for scope and interpretation. These tests are artifact
-regression and database-contract checks. They do not rerun the licensed AHA
-pipeline end to end, and they do not independently parse the manuscript PDF or
-LaTeX source.
-
-## Versioning
-
-The intended journal-submission release tag is:
-
-```sh
-v1.0.4
-```
-
-Use the release tag that corresponds exactly to the submitted manuscript in the
-Data Availability and Code Availability statements. If later test-suite,
-artifact, or documentation corrections are included after the cited tag, create
-and cite a new release tag rather than assuming an older tag contains those
-changes.
-
-## License
-
-Code is released under the MIT License. Redistributable derived outputs are provided for scholarly reproducibility. Third-party source datasets remain subject to their original licensing terms.
+Code is MIT licensed. Third-party data retain their source terms. The code license is separate from the publisher's article license. Cite the immutable release used for an analysis. Never move an existing cited tag to new content. Before tagging a new version, finalize citation metadata, regenerate `FILE_MANIFEST_SHA256.txt` with `python tools/update_manifest.py`, and run the tests.
