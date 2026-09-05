@@ -1,0 +1,23 @@
+{
+  "recovered_on": "2026-09-05",
+  "new_view_definitions": [
+    "vw_tech_enabled_beds_by_county_adjpd",
+    "vw_robotics_score_by_hospital_adjpd",
+    "vw_conceptual_model_adjpd",
+    "vw_hospital_performance_metrics",
+    "vw_healthcare_associated_infections",
+    "vw_hospital_patient_experience",
+    "vw_unplanned_hospital_visits",
+    "vw_timely_effective_care",
+    "vw_hospital_level_aipw",
+    "hospital_level_placebo_2019",
+    "vw_tech_enabled_beds_by_county",
+    "vw_hospital_ai_score",
+    "vw_robotics_score_by_hospital",
+    "vw_conceptual_model_variables",
+    "vw_county_covid_deaths",
+    "vw_county_file_export_wide",
+    "vw_hospital_ownership_percentages"
+  ],
+  "note": "Recovered from the local research database. Existing v1.0.4 view definitions retained. This is a schema recovery, not evidence of a new statistical rerun."
+}

@@ -1,0 +1,6358 @@
+{
+  "aha_appendix_a_ownership_codes": [
+    [
+      "category",
+      "character varying"
+    ],
+    [
+      "code",
+      "character varying"
+    ],
+    [
+      "description",
+      "character varying"
+    ]
+  ],
+  "aha_appendix_c_census_divisions": [
+    [
+      "census_division",
+      "character varying"
+    ],
+    [
+      "division_desc",
+      "character varying"
+    ],
+    [
+      "state_code",
+      "character varying"
+    ],
+    [
+      "state_desc",
+      "character varying"
+    ]
+  ],
+  "aha_cms_crosswalk": [
+    [
+      "aha_id",
+      "text"
+    ],
+    [
+      "cms_facility_id",
+      "text"
+    ],
+    [
+      "match_status",
+      "text"
+    ],
+    [
+      "match_rule",
+      "text"
+    ],
+    [
+      "match_score",
+      "double precision"
+    ],
+    [
+      "aha_name",
+      "text"
+    ],
+    [
+      "aha_address",
+      "text"
+    ],
+    [
+      "aha_city",
+      "text"
+    ],
+    [
+      "aha_state_fips",
+      "text"
+    ],
+    [
+      "aha_state",
+      "text"
+    ],
+    [
+      "aha_zip",
+      "text"
+    ],
+    [
+      "aha_county_fips",
+      "text"
+    ],
+    [
+      "cms_facility_name",
+      "text"
+    ],
+    [
+      "cms_address",
+      "text"
+    ],
+    [
+      "cms_city",
+      "text"
+    ],
+    [
+      "cms_state",
+      "text"
+    ],
+    [
+      "cms_zip",
+      "text"
+    ],
+    [
+      "cms_county",
+      "text"
+    ],
+    [
+      "cms_phone",
+      "text"
+    ]
+  ],
+  "aha_survey_data": [
+    [
+      "id",
+      "character varying"
+    ],
+    [
+      "cntrl",
+      "character varying"
+    ],
+    [
+      "mname",
+      "character varying"
+    ],
+    [
+      "madmin",
+      "character varying"
+    ],
+    [
+      "mlocaddr",
+      "character varying"
+    ],
+    [
+      "mloccity",
+      "character varying"
+    ],
+    [
+      "mlocstcd",
+      "character varying"
+    ],
+    [
+      "mloczip",
+      "character varying"
+    ],
+    [
+      "bsc",
+      "character varying"
+    ],
+    [
+      "sysname",
+      "character varying"
+    ],
+    [
+      "fcounty",
+      "character varying"
+    ],
+    [
+      "mapp19",
+      "character varying"
+    ],
+    [
+      "mapp20",
+      "character varying"
+    ],
+    [
+      "robohos",
+      "character varying"
+    ],
+    [
+      "robosys",
+      "character varying"
+    ],
+    [
+      "roboven",
+      "character varying"
+    ],
+    [
+      "jnls",
+      "character varying"
+    ],
+    [
+      "paytot",
+      "character varying"
+    ],
+    [
+      "bdtot",
+      "character varying"
+    ],
+    [
+      "admtot",
+      "character varying"
+    ],
+    [
+      "ipdtot",
+      "character varying"
+    ],
+    [
+      "vem",
+      "character varying"
+    ],
+    [
+      "fted",
+      "character varying"
+    ],
+    [
+      "fter",
+      "character varying"
+    ],
+    [
+      "ften",
+      "character varying"
+    ],
+    [
+      "ftep",
+      "character varying"
+    ],
+    [
+      "fteap",
+      "character varying"
+    ],
+    [
+      "vmd",
+      "character varying"
+    ],
+    [
+      "vres",
+      "character varying"
+    ],
+    [
+      "vrn",
+      "character varying"
+    ],
+    [
+      "vlpn",
+      "character varying"
+    ],
+    [
+      "vast",
+      "character varying"
+    ],
+    [
+      "vrad",
+      "character varying"
+    ],
+    [
+      "vlab",
+      "character varying"
+    ],
+    [
+      "vrsp",
+      "character varying"
+    ],
+    [
+      "vothl",
+      "character varying"
+    ],
+    [
+      "vtotl",
+      "character varying"
+    ],
+    [
+      "adjadm",
+      "character varying"
+    ],
+    [
+      "adjpd",
+      "character varying"
+    ],
+    [
+      "adjadc",
+      "character varying"
+    ],
+    [
+      "ftemd",
+      "character varying"
+    ],
+    [
+      "ftern",
+      "character varying"
+    ],
+    [
+      "ftelpn",
+      "character varying"
+    ],
+    [
+      "fteres",
+      "character varying"
+    ],
+    [
+      "ftecap",
+      "character varying"
+    ],
+    [
+      "crnfte",
+      "character varying"
+    ],
+    [
+      "tecar",
+      "character varying"
+    ],
+    [
+      "aprn",
+      "character varying"
+    ],
+    [
+      "fteapn",
+      "character varying"
+    ],
+    [
+      "ftephrn",
+      "character varying"
+    ],
+    [
+      "wfaipsn",
+      "character varying"
+    ],
+    [
+      "wfaippd",
+      "character varying"
+    ],
+    [
+      "wfaiss",
+      "character varying"
+    ],
+    [
+      "wfaiart",
+      "character varying"
+    ],
+    [
+      "wfaioacw",
+      "character varying"
+    ],
+    [
+      "wfaidna",
+      "character varying"
+    ],
+    [
+      "gfeet",
+      "character varying"
+    ],
+    [
+      "ceamt",
+      "character varying"
+    ]
+  ],
+  "cdc_2023_age_banded_deaths_county": [
+    [
+      "county_fips",
+      "character varying"
+    ],
+    [
+      "residence_county",
+      "character varying"
+    ],
+    [
+      "ten_year_age_group",
+      "character varying"
+    ],
+    [
+      "deaths",
+      "character varying"
+    ]
+  ],
+  "cdc_2023_age_banded_hospital_deaths": [
+    [
+      "county_fips",
+      "character varying"
+    ],
+    [
+      "residence_county",
+      "character varying"
+    ],
+    [
+      "ten_year_age_group",
+      "character varying"
+    ],
+    [
+      "deaths",
+      "character varying"
+    ]
+  ],
+  "cdc_2023_county_deaths_under_75yrs": [
+    [
+      "county_fips",
+      "character varying"
+    ],
+    [
+      "residence_county",
+      "character varying"
+    ],
+    [
+      "deaths",
+      "character varying"
+    ]
+  ],
+  "cdc_covid_deaths": [
+    [
+      "date_as_of",
+      "character varying"
+    ],
+    [
+      "start_date",
+      "character varying"
+    ],
+    [
+      "end_date",
+      "character varying"
+    ],
+    [
+      "state",
+      "character varying"
+    ],
+    [
+      "county_name",
+      "character varying"
+    ],
+    [
+      "fips_county_code",
+      "character varying"
+    ],
+    [
+      "urban_rural_code",
+      "character varying"
+    ],
+    [
+      "deaths_involving_covid_19",
+      "character varying"
+    ],
+    [
+      "deaths_from_all_causes",
+      "character varying"
+    ],
+    [
+      "footnote",
+      "character varying"
+    ]
+  ],
+  "cdc_wonder_5_year_mortality_2023": [
+    [
+      "county",
+      "character varying"
+    ],
+    [
+      "county_code",
+      "character varying"
+    ],
+    [
+      "deaths",
+      "character varying"
+    ],
+    [
+      "population",
+      "character varying"
+    ],
+    [
+      "crude_rate",
+      "character varying"
+    ]
+  ],
+  "census_est2024_population": [
+    [
+      "sumlev",
+      "character varying"
+    ],
+    [
+      "state",
+      "character varying"
+    ],
+    [
+      "county",
+      "character varying"
+    ],
+    [
+      "stname",
+      "character varying"
+    ],
+    [
+      "ctyname",
+      "character varying"
+    ],
+    [
+      "year",
+      "character varying"
+    ],
+    [
+      "popestimate",
+      "character varying"
+    ],
+    [
+      "popest_male",
+      "character varying"
+    ],
+    [
+      "popest_fem",
+      "character varying"
+    ],
+    [
+      "under5_tot",
+      "character varying"
+    ],
+    [
+      "under5_male",
+      "character varying"
+    ],
+    [
+      "under5_fem",
+      "character varying"
+    ],
+    [
+      "age513_tot",
+      "character varying"
+    ],
+    [
+      "age513_male",
+      "character varying"
+    ],
+    [
+      "age513_fem",
+      "character varying"
+    ],
+    [
+      "age1417_tot",
+      "character varying"
+    ],
+    [
+      "age1417_male",
+      "character varying"
+    ],
+    [
+      "age1417_fem",
+      "character varying"
+    ],
+    [
+      "age1824_tot",
+      "character varying"
+    ],
+    [
+      "age1824_male",
+      "character varying"
+    ],
+    [
+      "age1824_fem",
+      "character varying"
+    ],
+    [
+      "age16plus_tot",
+      "character varying"
+    ],
+    [
+      "age16plus_male",
+      "character varying"
+    ],
+    [
+      "age16plus_fem",
+      "character varying"
+    ],
+    [
+      "age18plus_tot",
+      "character varying"
+    ],
+    [
+      "age18plus_male",
+      "character varying"
+    ],
+    [
+      "age18plus_fem",
+      "character varying"
+    ],
+    [
+      "age1544_tot",
+      "character varying"
+    ],
+    [
+      "age1544_male",
+      "character varying"
+    ],
+    [
+      "age1544_fem",
+      "character varying"
+    ],
+    [
+      "age2544_tot",
+      "character varying"
+    ],
+    [
+      "age2544_male",
+      "character varying"
+    ],
+    [
+      "age2544_fem",
+      "character varying"
+    ],
+    [
+      "age4564_tot",
+      "character varying"
+    ],
+    [
+      "age4564_male",
+      "character varying"
+    ],
+    [
+      "age4564_fem",
+      "character varying"
+    ],
+    [
+      "age65plus_tot",
+      "character varying"
+    ],
+    [
+      "age65plus_male",
+      "character varying"
+    ],
+    [
+      "age65plus_fem",
+      "character varying"
+    ],
+    [
+      "age04_tot",
+      "character varying"
+    ],
+    [
+      "age04_male",
+      "character varying"
+    ],
+    [
+      "age04_fem",
+      "character varying"
+    ],
+    [
+      "age59_tot",
+      "character varying"
+    ],
+    [
+      "age59_male",
+      "character varying"
+    ],
+    [
+      "age59_fem",
+      "character varying"
+    ],
+    [
+      "age1014_tot",
+      "character varying"
+    ],
+    [
+      "age1014_male",
+      "character varying"
+    ],
+    [
+      "age1014_fem",
+      "character varying"
+    ],
+    [
+      "age1519_tot",
+      "character varying"
+    ],
+    [
+      "age1519_male",
+      "character varying"
+    ],
+    [
+      "age1519_fem",
+      "character varying"
+    ],
+    [
+      "age2024_tot",
+      "character varying"
+    ],
+    [
+      "age2024_male",
+      "character varying"
+    ],
+    [
+      "age2024_fem",
+      "character varying"
+    ],
+    [
+      "age2529_tot",
+      "character varying"
+    ],
+    [
+      "age2529_male",
+      "character varying"
+    ],
+    [
+      "age2529_fem",
+      "character varying"
+    ],
+    [
+      "age3034_tot",
+      "character varying"
+    ],
+    [
+      "age3034_male",
+      "character varying"
+    ],
+    [
+      "age3034_fem",
+      "character varying"
+    ],
+    [
+      "age3539_tot",
+      "character varying"
+    ],
+    [
+      "age3539_male",
+      "character varying"
+    ],
+    [
+      "age3539_fem",
+      "character varying"
+    ],
+    [
+      "age4044_tot",
+      "character varying"
+    ],
+    [
+      "age4044_male",
+      "character varying"
+    ],
+    [
+      "age4044_fem",
+      "character varying"
+    ],
+    [
+      "age4549_tot",
+      "character varying"
+    ],
+    [
+      "age4549_male",
+      "character varying"
+    ],
+    [
+      "age4549_fem",
+      "character varying"
+    ],
+    [
+      "age5054_tot",
+      "character varying"
+    ],
+    [
+      "age5054_male",
+      "character varying"
+    ],
+    [
+      "age5054_fem",
+      "character varying"
+    ],
+    [
+      "age5559_tot",
+      "character varying"
+    ],
+    [
+      "age5559_male",
+      "character varying"
+    ],
+    [
+      "age5559_fem",
+      "character varying"
+    ],
+    [
+      "age6064_tot",
+      "character varying"
+    ],
+    [
+      "age6064_male",
+      "character varying"
+    ],
+    [
+      "age6064_fem",
+      "character varying"
+    ],
+    [
+      "age6569_tot",
+      "character varying"
+    ],
+    [
+      "age6569_male",
+      "character varying"
+    ],
+    [
+      "age6569_fem",
+      "character varying"
+    ],
+    [
+      "age7074_tot",
+      "character varying"
+    ],
+    [
+      "age7074_male",
+      "character varying"
+    ],
+    [
+      "age7074_fem",
+      "character varying"
+    ],
+    [
+      "age7579_tot",
+      "character varying"
+    ],
+    [
+      "age7579_male",
+      "character varying"
+    ],
+    [
+      "age7579_fem",
+      "character varying"
+    ],
+    [
+      "age8084_tot",
+      "character varying"
+    ],
+    [
+      "age8084_male",
+      "character varying"
+    ],
+    [
+      "age8084_fem",
+      "character varying"
+    ],
+    [
+      "age85plus_tot",
+      "character varying"
+    ],
+    [
+      "age85plus_male",
+      "character varying"
+    ],
+    [
+      "age85plus_fem",
+      "character varying"
+    ],
+    [
+      "median_age_tot",
+      "character varying"
+    ],
+    [
+      "median_age_male",
+      "character varying"
+    ],
+    [
+      "median_age_fem",
+      "character varying"
+    ]
+  ],
+  "chr_2019_ypll_placebo": [
+    [
+      "county_fips",
+      "character varying"
+    ],
+    [
+      "state",
+      "character varying"
+    ],
+    [
+      "county",
+      "character varying"
+    ],
+    [
+      "ypll_rate",
+      "character varying"
+    ]
+  ],
+  "chr_analytic_chunk_1": [
+    [
+      "state_fips",
+      "character varying"
+    ],
+    [
+      "county_fips",
+      "character varying"
+    ],
+    [
+      "_5_digit_fips",
+      "character varying"
+    ],
+    [
+      "state_abbreviation",
+      "character varying"
+    ],
+    [
+      "name",
+      "character varying"
+    ],
+    [
+      "year",
+      "character varying"
+    ],
+    [
+      "county_clustered",
+      "character varying"
+    ],
+    [
+      "premature_death_raw_value",
+      "character varying"
+    ],
+    [
+      "premature_death_numerator",
+      "character varying"
+    ],
+    [
+      "premature_death_denominator",
+      "character varying"
+    ],
+    [
+      "premature_death_ci_low",
+      "character varying"
+    ],
+    [
+      "premature_death_ci_high",
+      "character varying"
+    ],
+    [
+      "premature_death_flag_0_no_flag_1_unreliable_2_suppressed",
+      "character varying"
+    ],
+    [
+      "premature_death_aian",
+      "character varying"
+    ],
+    [
+      "premature_death_ci_low_aian",
+      "character varying"
+    ],
+    [
+      "premature_death_ci_high_aian",
+      "character varying"
+    ],
+    [
+      "premature_death_flag_aian_no_flag_1_unreliable_2_suppressed",
+      "character varying"
+    ],
+    [
+      "premature_death_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "premature_death_ci_low_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "premature_death_ci_high_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "premature_death_flag_asian_pacific_islander_no_flag_1_unreliabl",
+      "character varying"
+    ],
+    [
+      "premature_death_black",
+      "character varying"
+    ],
+    [
+      "premature_death_ci_low_black",
+      "character varying"
+    ],
+    [
+      "premature_death_ci_high_black",
+      "character varying"
+    ],
+    [
+      "premature_death_flag_black_no_flag_1_unreliable_2_suppressed",
+      "character varying"
+    ],
+    [
+      "premature_death_hispanic",
+      "character varying"
+    ],
+    [
+      "premature_death_ci_low_hispanic",
+      "character varying"
+    ],
+    [
+      "premature_death_ci_high_hispanic",
+      "character varying"
+    ],
+    [
+      "premature_death_flag_hispanic_no_flag_1_unreliable_2_suppressed",
+      "character varying"
+    ],
+    [
+      "premature_death_white",
+      "character varying"
+    ],
+    [
+      "premature_death_ci_low_white",
+      "character varying"
+    ],
+    [
+      "premature_death_ci_high_white",
+      "character varying"
+    ],
+    [
+      "premature_death_nhopi",
+      "character varying"
+    ],
+    [
+      "premature_death_ci_low_nhopi",
+      "character varying"
+    ],
+    [
+      "premature_death_ci_high_nhopi",
+      "character varying"
+    ],
+    [
+      "premature_death_flag_nhopi_no_flag_1_unreliable_2_suppressed",
+      "character varying"
+    ],
+    [
+      "poor_or_fair_health_raw_value",
+      "character varying"
+    ],
+    [
+      "poor_or_fair_health_ci_low",
+      "character varying"
+    ],
+    [
+      "poor_or_fair_health_ci_high",
+      "character varying"
+    ],
+    [
+      "poor_physical_health_days_raw_value",
+      "character varying"
+    ],
+    [
+      "poor_physical_health_days_ci_low",
+      "character varying"
+    ],
+    [
+      "poor_physical_health_days_ci_high",
+      "character varying"
+    ],
+    [
+      "poor_mental_health_days_raw_value",
+      "character varying"
+    ],
+    [
+      "poor_mental_health_days_ci_low",
+      "character varying"
+    ],
+    [
+      "poor_mental_health_days_ci_high",
+      "character varying"
+    ],
+    [
+      "low_birthweight_raw_value",
+      "character varying"
+    ],
+    [
+      "low_birthweight_numerator",
+      "character varying"
+    ],
+    [
+      "low_birthweight_denominator",
+      "character varying"
+    ],
+    [
+      "low_birthweight_ci_low",
+      "character varying"
+    ],
+    [
+      "low_birthweight_ci_high",
+      "character varying"
+    ],
+    [
+      "lbw_unreliable_indicator_unreliable_numerator_20_or_relative_st",
+      "character varying"
+    ],
+    [
+      "low_birthweight_aian",
+      "character varying"
+    ],
+    [
+      "low_birthweight_ci_low_aian",
+      "character varying"
+    ],
+    [
+      "low_birthweight_ci_high_aian",
+      "character varying"
+    ],
+    [
+      "low_birthweight_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "low_birthweight_ci_low_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "low_birthweight_ci_high_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "low_birthweight_black",
+      "character varying"
+    ],
+    [
+      "low_birthweight_ci_low_black",
+      "character varying"
+    ],
+    [
+      "low_birthweight_ci_high_black",
+      "character varying"
+    ],
+    [
+      "low_birthweight_hispanic",
+      "character varying"
+    ],
+    [
+      "low_birthweight_ci_low_hispanic",
+      "character varying"
+    ],
+    [
+      "low_birthweight_ci_high_hispanic",
+      "character varying"
+    ],
+    [
+      "low_birthweight_white",
+      "character varying"
+    ],
+    [
+      "low_birthweight_ci_low_white",
+      "character varying"
+    ],
+    [
+      "low_birthweight_ci_high_white",
+      "character varying"
+    ],
+    [
+      "low_birthweight_nhopi",
+      "character varying"
+    ],
+    [
+      "low_birthweight_ci_low_nhopi",
+      "character varying"
+    ],
+    [
+      "low_birthweight_ci_high_nhopi",
+      "character varying"
+    ],
+    [
+      "low_birthweight_two_or_more_races",
+      "character varying"
+    ],
+    [
+      "low_birthweight_ci_low_two_or_more_races",
+      "character varying"
+    ],
+    [
+      "low_birthweight_ci_high_two_or_more_races",
+      "character varying"
+    ],
+    [
+      "adult_smoking_raw_value",
+      "character varying"
+    ],
+    [
+      "adult_smoking_ci_low",
+      "character varying"
+    ],
+    [
+      "adult_smoking_ci_high",
+      "character varying"
+    ],
+    [
+      "adult_obesity_raw_value",
+      "character varying"
+    ],
+    [
+      "adult_obesity_ci_low",
+      "character varying"
+    ],
+    [
+      "adult_obesity_ci_high",
+      "character varying"
+    ],
+    [
+      "food_environment_index_raw_value",
+      "character varying"
+    ],
+    [
+      "food_environment_index_numerator",
+      "character varying"
+    ],
+    [
+      "food_environment_index_denominator",
+      "character varying"
+    ],
+    [
+      "physical_inactivity_raw_value",
+      "character varying"
+    ],
+    [
+      "physical_inactivity_ci_low",
+      "character varying"
+    ],
+    [
+      "physical_inactivity_ci_high",
+      "character varying"
+    ],
+    [
+      "access_to_exercise_opportunities_raw_value",
+      "character varying"
+    ],
+    [
+      "access_to_exercise_opportunities_numerator",
+      "character varying"
+    ],
+    [
+      "access_to_exercise_opportunities_denominator",
+      "character varying"
+    ],
+    [
+      "excessive_drinking_raw_value",
+      "character varying"
+    ],
+    [
+      "excessive_drinking_ci_low",
+      "character varying"
+    ],
+    [
+      "excessive_drinking_ci_high",
+      "character varying"
+    ],
+    [
+      "alcohol_impaired_driving_deaths_raw_value",
+      "character varying"
+    ],
+    [
+      "alcohol_impaired_driving_deaths_numerator",
+      "character varying"
+    ],
+    [
+      "alcohol_impaired_driving_deaths_denominator",
+      "character varying"
+    ],
+    [
+      "alcohol_impaired_driving_deaths_ci_low",
+      "character varying"
+    ],
+    [
+      "alcohol_impaired_driving_deaths_ci_high",
+      "character varying"
+    ],
+    [
+      "sexually_transmitted_infections_raw_value",
+      "character varying"
+    ],
+    [
+      "sexually_transmitted_infections_numerator",
+      "character varying"
+    ],
+    [
+      "sexually_transmitted_infections_denominator",
+      "character varying"
+    ],
+    [
+      "teen_births_raw_value",
+      "character varying"
+    ],
+    [
+      "teen_births_numerator",
+      "character varying"
+    ],
+    [
+      "teen_births_denominator",
+      "character varying"
+    ],
+    [
+      "teen_births_ci_low",
+      "character varying"
+    ],
+    [
+      "teen_births_ci_high",
+      "character varying"
+    ],
+    [
+      "teen_births_aian",
+      "character varying"
+    ],
+    [
+      "teen_births_ci_low_aian",
+      "character varying"
+    ],
+    [
+      "teen_births_ci_high_aian",
+      "character varying"
+    ],
+    [
+      "teen_births_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "teen_births_ci_low_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "teen_births_ci_high_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "teen_births_black",
+      "character varying"
+    ],
+    [
+      "teen_births_ci_low_black",
+      "character varying"
+    ],
+    [
+      "teen_births_ci_high_black",
+      "character varying"
+    ],
+    [
+      "teen_births_hispanic",
+      "character varying"
+    ],
+    [
+      "teen_births_ci_low_hispanic",
+      "character varying"
+    ],
+    [
+      "teen_births_ci_high_hispanic",
+      "character varying"
+    ],
+    [
+      "teen_births_white",
+      "character varying"
+    ],
+    [
+      "teen_births_ci_low_white",
+      "character varying"
+    ],
+    [
+      "teen_births_ci_high_white",
+      "character varying"
+    ],
+    [
+      "teen_births_nhopi",
+      "character varying"
+    ],
+    [
+      "teen_births_ci_low_nhopi",
+      "character varying"
+    ],
+    [
+      "teen_births_ci_high_nhopi",
+      "character varying"
+    ],
+    [
+      "teen_births_two_or_more_races",
+      "character varying"
+    ],
+    [
+      "teen_births_ci_low_two_or_more_races",
+      "character varying"
+    ],
+    [
+      "teen_births_ci_high_two_or_more_races",
+      "character varying"
+    ],
+    [
+      "uninsured_raw_value",
+      "character varying"
+    ],
+    [
+      "uninsured_numerator",
+      "character varying"
+    ],
+    [
+      "uninsured_denominator",
+      "character varying"
+    ],
+    [
+      "uninsured_ci_low",
+      "character varying"
+    ],
+    [
+      "uninsured_ci_high",
+      "character varying"
+    ],
+    [
+      "primary_care_physicians_raw_value",
+      "character varying"
+    ],
+    [
+      "primary_care_physicians_numerator",
+      "character varying"
+    ],
+    [
+      "primary_care_physicians_denominator",
+      "character varying"
+    ],
+    [
+      "ratio_of_population_to_primary_care_physicians",
+      "character varying"
+    ],
+    [
+      "dentists_raw_value",
+      "character varying"
+    ],
+    [
+      "dentists_numerator",
+      "character varying"
+    ],
+    [
+      "dentists_denominator",
+      "character varying"
+    ],
+    [
+      "ratio_of_population_to_dentists",
+      "character varying"
+    ],
+    [
+      "mental_health_providers_raw_value",
+      "character varying"
+    ],
+    [
+      "mental_health_providers_numerator",
+      "character varying"
+    ],
+    [
+      "mental_health_providers_denominator",
+      "character varying"
+    ],
+    [
+      "ratio_of_population_to_mental_health_providers",
+      "character varying"
+    ],
+    [
+      "preventable_hospital_stays_raw_value",
+      "character varying"
+    ],
+    [
+      "preventable_hospital_stays_aian",
+      "character varying"
+    ],
+    [
+      "preventable_hospital_stays_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "preventable_hospital_stays_black",
+      "character varying"
+    ],
+    [
+      "preventable_hospital_stays_hispanic",
+      "character varying"
+    ],
+    [
+      "preventable_hospital_stays_white",
+      "character varying"
+    ],
+    [
+      "mammography_screening_raw_value",
+      "character varying"
+    ],
+    [
+      "mammography_screening_aian",
+      "character varying"
+    ],
+    [
+      "mammography_screening_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "mammography_screening_black",
+      "character varying"
+    ],
+    [
+      "mammography_screening_hispanic",
+      "character varying"
+    ],
+    [
+      "mammography_screening_white",
+      "character varying"
+    ],
+    [
+      "flu_vaccinations_raw_value",
+      "character varying"
+    ],
+    [
+      "flu_vaccinations_aian",
+      "character varying"
+    ],
+    [
+      "flu_vaccinations_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "flu_vaccinations_black",
+      "character varying"
+    ],
+    [
+      "flu_vaccinations_hispanic",
+      "character varying"
+    ],
+    [
+      "flu_vaccinations_white",
+      "character varying"
+    ],
+    [
+      "high_school_completion_raw_value",
+      "character varying"
+    ],
+    [
+      "high_school_completion_numerator",
+      "character varying"
+    ],
+    [
+      "high_school_completion_denominator",
+      "character varying"
+    ],
+    [
+      "high_school_completion_ci_low",
+      "character varying"
+    ],
+    [
+      "high_school_completion_ci_high",
+      "character varying"
+    ],
+    [
+      "some_college_raw_value",
+      "character varying"
+    ],
+    [
+      "some_college_numerator",
+      "character varying"
+    ],
+    [
+      "some_college_denominator",
+      "character varying"
+    ],
+    [
+      "some_college_ci_low",
+      "character varying"
+    ],
+    [
+      "some_college_ci_high",
+      "character varying"
+    ],
+    [
+      "unemployment_raw_value",
+      "character varying"
+    ],
+    [
+      "unemployment_numerator",
+      "character varying"
+    ],
+    [
+      "unemployment_denominator",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_raw_value",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_numerator",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_ci_low",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_ci_high",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_aian",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_ci_low_aian",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_ci_high_aian",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_ci_low_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_ci_high_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_black",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_ci_low_black",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_ci_high_black",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_hispanic",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_ci_low_hispanic",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_ci_high_hispanic",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_white",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_ci_low_white",
+      "character varying"
+    ],
+    [
+      "children_in_poverty_ci_high_white",
+      "character varying"
+    ]
+  ],
+  "chr_analytic_chunk_2": [
+    [
+      "state_fips",
+      "character varying"
+    ],
+    [
+      "county_fips",
+      "character varying"
+    ],
+    [
+      "_5_digit_fips",
+      "character varying"
+    ],
+    [
+      "state_abbreviation",
+      "character varying"
+    ],
+    [
+      "name",
+      "character varying"
+    ],
+    [
+      "year",
+      "character varying"
+    ],
+    [
+      "income_inequality_raw_value",
+      "character varying"
+    ],
+    [
+      "income_inequality_numerator",
+      "character varying"
+    ],
+    [
+      "income_inequality_denominator",
+      "character varying"
+    ],
+    [
+      "income_inequality_ci_low",
+      "character varying"
+    ],
+    [
+      "income_inequality_ci_high",
+      "character varying"
+    ],
+    [
+      "children_in_single_parent_households_raw_value",
+      "character varying"
+    ],
+    [
+      "children_in_single_parent_households_numerator",
+      "character varying"
+    ],
+    [
+      "children_in_single_parent_households_denominator",
+      "character varying"
+    ],
+    [
+      "children_in_single_parent_households_ci_low",
+      "character varying"
+    ],
+    [
+      "children_in_single_parent_households_ci_high",
+      "character varying"
+    ],
+    [
+      "social_associations_raw_value",
+      "character varying"
+    ],
+    [
+      "social_associations_numerator",
+      "character varying"
+    ],
+    [
+      "social_associations_denominator",
+      "character varying"
+    ],
+    [
+      "injury_deaths_raw_value",
+      "character varying"
+    ],
+    [
+      "injury_deaths_numerator",
+      "character varying"
+    ],
+    [
+      "injury_deaths_denominator",
+      "character varying"
+    ],
+    [
+      "injury_deaths_ci_low",
+      "character varying"
+    ],
+    [
+      "injury_deaths_ci_high",
+      "character varying"
+    ],
+    [
+      "injury_deaths_aian",
+      "character varying"
+    ],
+    [
+      "injury_deaths_ci_low_aian",
+      "character varying"
+    ],
+    [
+      "injury_deaths_ci_high_aian",
+      "character varying"
+    ],
+    [
+      "injury_deaths_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "injury_deaths_ci_low_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "injury_deaths_ci_high_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "injury_deaths_black",
+      "character varying"
+    ],
+    [
+      "injury_deaths_ci_low_black",
+      "character varying"
+    ],
+    [
+      "injury_deaths_ci_high_black",
+      "character varying"
+    ],
+    [
+      "injury_deaths_hispanic",
+      "character varying"
+    ],
+    [
+      "injury_deaths_ci_low_hispanic",
+      "character varying"
+    ],
+    [
+      "injury_deaths_ci_high_hispanic",
+      "character varying"
+    ],
+    [
+      "injury_deaths_white",
+      "character varying"
+    ],
+    [
+      "injury_deaths_ci_low_white",
+      "character varying"
+    ],
+    [
+      "injury_deaths_ci_high_white",
+      "character varying"
+    ],
+    [
+      "injury_deaths_nhopi",
+      "character varying"
+    ],
+    [
+      "injury_deaths_ci_low_nhopi",
+      "character varying"
+    ],
+    [
+      "injury_deaths_ci_high_nhopi",
+      "character varying"
+    ],
+    [
+      "air_pollution_particulate_matter_raw_value",
+      "character varying"
+    ],
+    [
+      "drinking_water_violations_raw_value",
+      "character varying"
+    ],
+    [
+      "severe_housing_problems_raw_value",
+      "character varying"
+    ],
+    [
+      "severe_housing_problems_numerator",
+      "character varying"
+    ],
+    [
+      "severe_housing_problems_denominator",
+      "character varying"
+    ],
+    [
+      "severe_housing_problems_ci_low",
+      "character varying"
+    ],
+    [
+      "severe_housing_problems_ci_high",
+      "character varying"
+    ],
+    [
+      "percentage_of_households_with_high_housing_costs",
+      "character varying"
+    ],
+    [
+      "percentage_of_households_with_high_housing_costs_ci_low",
+      "character varying"
+    ],
+    [
+      "percentage_of_households_with_high_housing_costs_ci_high",
+      "character varying"
+    ],
+    [
+      "percentage_of_households_with_overcrowding",
+      "character varying"
+    ],
+    [
+      "percentage_of_households_with_overcrowding_ci_low",
+      "character varying"
+    ],
+    [
+      "percentage_of_households_with_overcrowding_ci_high",
+      "character varying"
+    ],
+    [
+      "pct_households_with_lack_of_kitchen_or_plumbing",
+      "character varying"
+    ],
+    [
+      "pct_households_with_lack_of_kitchen_or_plumbing_ci_low",
+      "character varying"
+    ],
+    [
+      "pct_households_with_lack_of_kitchen_or_plumbing_ci_high",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_raw_value",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_numerator",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_denominator",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_ci_low",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_ci_high",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_aian",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_ci_low_aian",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_ci_high_aian",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_ci_low_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_ci_high_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_black",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_ci_low_black",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_ci_high_black",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_hispanic",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_ci_low_hispanic",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_ci_high_hispanic",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_white",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_ci_low_white",
+      "character varying"
+    ],
+    [
+      "driving_alone_to_work_ci_high_white",
+      "character varying"
+    ],
+    [
+      "long_commute_driving_alone_raw_value",
+      "character varying"
+    ],
+    [
+      "long_commute_driving_alone_denominator",
+      "character varying"
+    ],
+    [
+      "long_commute_driving_alone_ci_low",
+      "character varying"
+    ],
+    [
+      "long_commute_driving_alone_ci_high",
+      "character varying"
+    ],
+    [
+      "life_expectancy_raw_value",
+      "character varying"
+    ],
+    [
+      "life_expectancy_ci_low",
+      "character varying"
+    ],
+    [
+      "life_expectancy_ci_high",
+      "character varying"
+    ],
+    [
+      "life_expectancy_aian",
+      "character varying"
+    ],
+    [
+      "life_expectancy_ci_low_aian",
+      "character varying"
+    ],
+    [
+      "life_expectancy_ci_high_aian",
+      "character varying"
+    ],
+    [
+      "life_expectancy_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "life_expectancy_ci_low_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "life_expectancy_ci_high_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "life_expectancy_black",
+      "character varying"
+    ],
+    [
+      "life_expectancy_ci_low_black",
+      "character varying"
+    ],
+    [
+      "life_expectancy_ci_high_black",
+      "character varying"
+    ],
+    [
+      "life_expectancy_hispanic",
+      "character varying"
+    ],
+    [
+      "life_expectancy_ci_low_hispanic",
+      "character varying"
+    ],
+    [
+      "life_expectancy_ci_high_hispanic",
+      "character varying"
+    ],
+    [
+      "life_expectancy_white",
+      "character varying"
+    ],
+    [
+      "life_expectancy_ci_low_white",
+      "character varying"
+    ],
+    [
+      "life_expectancy_ci_high_white",
+      "character varying"
+    ],
+    [
+      "life_expectancy_nhopi",
+      "character varying"
+    ],
+    [
+      "life_expectancy_ci_low_nhopi",
+      "character varying"
+    ],
+    [
+      "life_expectancy_ci_high_nhopi",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_raw_value",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_numerator",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_denominator",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_ci_low",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_ci_high",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_aian",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_ci_low_aian",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_ci_high_aian",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_ci_low_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_ci_high_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_black",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_ci_low_black",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_ci_high_black",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_hispanic",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_ci_low_hispanic",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_ci_high_hispanic",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_white",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_ci_low_white",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_ci_high_white",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_nhopi",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_ci_low_nhopi",
+      "character varying"
+    ],
+    [
+      "premature_age_adjusted_mortality_ci_high_nhopi",
+      "character varying"
+    ],
+    [
+      "child_mortality_raw_value",
+      "character varying"
+    ],
+    [
+      "child_mortality_numerator",
+      "character varying"
+    ],
+    [
+      "child_mortality_denominator",
+      "character varying"
+    ],
+    [
+      "child_mortality_ci_low",
+      "character varying"
+    ],
+    [
+      "child_mortality_ci_high",
+      "character varying"
+    ],
+    [
+      "child_mortality_aian",
+      "character varying"
+    ],
+    [
+      "child_mortality_ci_low_aian",
+      "character varying"
+    ],
+    [
+      "child_mortality_ci_high_aian",
+      "character varying"
+    ],
+    [
+      "child_mortality_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "child_mortality_ci_low_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "child_mortality_ci_high_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "child_mortality_black",
+      "character varying"
+    ],
+    [
+      "child_mortality_ci_low_black",
+      "character varying"
+    ],
+    [
+      "child_mortality_ci_high_black",
+      "character varying"
+    ],
+    [
+      "child_mortality_hispanic",
+      "character varying"
+    ],
+    [
+      "child_mortality_ci_low_hispanic",
+      "character varying"
+    ],
+    [
+      "child_mortality_ci_high_hispanic",
+      "character varying"
+    ],
+    [
+      "child_mortality_white",
+      "character varying"
+    ],
+    [
+      "child_mortality_ci_low_white",
+      "character varying"
+    ],
+    [
+      "child_mortality_ci_high_white",
+      "character varying"
+    ],
+    [
+      "child_mortality_nhopi",
+      "character varying"
+    ],
+    [
+      "child_mortality_ci_low_nhopi",
+      "character varying"
+    ],
+    [
+      "child_mortality_ci_high_nhopi",
+      "character varying"
+    ],
+    [
+      "infant_mortality_raw_value",
+      "character varying"
+    ],
+    [
+      "infant_mortality_numerator",
+      "character varying"
+    ],
+    [
+      "infant_mortality_denominator",
+      "character varying"
+    ],
+    [
+      "infant_mortality_ci_low",
+      "character varying"
+    ],
+    [
+      "infant_mortality_ci_high",
+      "character varying"
+    ],
+    [
+      "infant_mortality_aian",
+      "character varying"
+    ],
+    [
+      "infant_mortality_ci_low_aian",
+      "character varying"
+    ],
+    [
+      "infant_mortality_ci_high_aian",
+      "character varying"
+    ],
+    [
+      "infant_mortality_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "infant_mortality_ci_low_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "infant_mortality_ci_high_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "infant_mortality_black",
+      "character varying"
+    ],
+    [
+      "infant_mortality_ci_low_black",
+      "character varying"
+    ],
+    [
+      "infant_mortality_ci_high_black",
+      "character varying"
+    ],
+    [
+      "infant_mortality_hispanic",
+      "character varying"
+    ],
+    [
+      "infant_mortality_ci_low_hispanic",
+      "character varying"
+    ],
+    [
+      "infant_mortality_ci_high_hispanic",
+      "character varying"
+    ],
+    [
+      "infant_mortality_white",
+      "character varying"
+    ],
+    [
+      "infant_mortality_ci_low_white",
+      "character varying"
+    ],
+    [
+      "infant_mortality_ci_high_white",
+      "character varying"
+    ],
+    [
+      "infant_mortality_nhopi",
+      "character varying"
+    ],
+    [
+      "infant_mortality_ci_low_nhopi",
+      "character varying"
+    ],
+    [
+      "infant_mortality_ci_high_nhopi",
+      "character varying"
+    ],
+    [
+      "infant_mortality_two_or_more_races",
+      "character varying"
+    ],
+    [
+      "infant_mortality_ci_low_two_or_more_races",
+      "character varying"
+    ],
+    [
+      "infant_mortality_ci_high_two_or_more_races",
+      "character varying"
+    ],
+    [
+      "frequent_physical_distress_raw_value",
+      "character varying"
+    ],
+    [
+      "frequent_physical_distress_ci_low",
+      "character varying"
+    ],
+    [
+      "frequent_physical_distress_ci_high",
+      "character varying"
+    ],
+    [
+      "frequent_mental_distress_raw_value",
+      "character varying"
+    ],
+    [
+      "frequent_mental_distress_ci_low",
+      "character varying"
+    ],
+    [
+      "frequent_mental_distress_ci_high",
+      "character varying"
+    ],
+    [
+      "diabetes_prevalence_raw_value",
+      "character varying"
+    ],
+    [
+      "diabetes_prevalence_ci_low",
+      "character varying"
+    ],
+    [
+      "diabetes_prevalence_ci_high",
+      "character varying"
+    ],
+    [
+      "hiv_prevalence_raw_value",
+      "character varying"
+    ],
+    [
+      "hiv_prevalence_numerator",
+      "character varying"
+    ],
+    [
+      "hiv_prevalence_denominator",
+      "character varying"
+    ],
+    [
+      "food_insecurity_raw_value",
+      "character varying"
+    ],
+    [
+      "food_insecurity_numerator",
+      "character varying"
+    ],
+    [
+      "limited_access_to_healthy_foods_raw_value",
+      "character varying"
+    ],
+    [
+      "limited_access_to_healthy_foods_numerator",
+      "character varying"
+    ],
+    [
+      "limited_access_to_healthy_foods_denominator",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_raw_value",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_numerator",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_denominator",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_ci_low",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_ci_high",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_aian",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_ci_low_aian",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_ci_high_aian",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_ci_low_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_ci_high_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_black",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_ci_low_black",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_ci_high_black",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_hispanic",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_ci_low_hispanic",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_ci_high_hispanic",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_white",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_ci_low_white",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_ci_high_white",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_nhopi",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_ci_low_nhopi",
+      "character varying"
+    ],
+    [
+      "drug_overdose_deaths_ci_high_nhopi",
+      "character varying"
+    ],
+    [
+      "insufficient_sleep_raw_value",
+      "character varying"
+    ],
+    [
+      "insufficient_sleep_ci_low",
+      "character varying"
+    ],
+    [
+      "insufficient_sleep_ci_high",
+      "character varying"
+    ]
+  ],
+  "chr_analytic_chunk_3": [
+    [
+      "state_fips",
+      "character varying"
+    ],
+    [
+      "county_fips",
+      "character varying"
+    ],
+    [
+      "_5_digit_fips",
+      "character varying"
+    ],
+    [
+      "state_abbreviation",
+      "character varying"
+    ],
+    [
+      "name",
+      "character varying"
+    ],
+    [
+      "year",
+      "character varying"
+    ],
+    [
+      "uninsured_adults_raw_value",
+      "character varying"
+    ],
+    [
+      "uninsured_adults_numerator",
+      "character varying"
+    ],
+    [
+      "uninsured_adults_denominator",
+      "character varying"
+    ],
+    [
+      "uninsured_adults_ci_low",
+      "character varying"
+    ],
+    [
+      "uninsured_adults_ci_high",
+      "character varying"
+    ],
+    [
+      "uninsured_children_raw_value",
+      "character varying"
+    ],
+    [
+      "uninsured_children_numerator",
+      "character varying"
+    ],
+    [
+      "uninsured_children_denominator",
+      "character varying"
+    ],
+    [
+      "uninsured_children_ci_low",
+      "character varying"
+    ],
+    [
+      "uninsured_children_ci_high",
+      "character varying"
+    ],
+    [
+      "other_primary_care_providers_raw_value",
+      "character varying"
+    ],
+    [
+      "other_primary_care_providers_numerator",
+      "character varying"
+    ],
+    [
+      "other_primary_care_providers_denominator",
+      "character varying"
+    ],
+    [
+      "ratio_of_population_to_primary_care_providers_other_than_physic",
+      "character varying"
+    ],
+    [
+      "high_school_graduation_raw_value",
+      "character varying"
+    ],
+    [
+      "high_school_graduation_numerator",
+      "character varying"
+    ],
+    [
+      "high_school_graduation_denominator",
+      "character varying"
+    ],
+    [
+      "disconnected_youth_raw_value",
+      "character varying"
+    ],
+    [
+      "disconnected_youth_numerator",
+      "character varying"
+    ],
+    [
+      "disconnected_youth_denominator",
+      "character varying"
+    ],
+    [
+      "disconnected_youth_ci_low",
+      "character varying"
+    ],
+    [
+      "disconnected_youth_ci_high",
+      "character varying"
+    ],
+    [
+      "reading_scores_raw_value",
+      "character varying"
+    ],
+    [
+      "reading_scores_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "reading_scores_black",
+      "character varying"
+    ],
+    [
+      "reading_scores_hispanic",
+      "character varying"
+    ],
+    [
+      "reading_scores_white",
+      "character varying"
+    ],
+    [
+      "math_scores_raw_value",
+      "character varying"
+    ],
+    [
+      "math_scores_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "math_scores_black",
+      "character varying"
+    ],
+    [
+      "math_scores_hispanic",
+      "character varying"
+    ],
+    [
+      "math_scores_white",
+      "character varying"
+    ],
+    [
+      "school_segregation_raw_value",
+      "character varying"
+    ],
+    [
+      "school_funding_adequacy_raw_value",
+      "character varying"
+    ],
+    [
+      "gender_pay_gap_raw_value",
+      "character varying"
+    ],
+    [
+      "gender_pay_gap_numerator",
+      "character varying"
+    ],
+    [
+      "gender_pay_gap_denominator",
+      "character varying"
+    ],
+    [
+      "gender_pay_gap_ci_low",
+      "character varying"
+    ],
+    [
+      "gender_pay_gap_ci_high",
+      "character varying"
+    ],
+    [
+      "median_household_income_raw_value",
+      "character varying"
+    ],
+    [
+      "median_household_income_ci_low",
+      "character varying"
+    ],
+    [
+      "median_household_income_ci_high",
+      "character varying"
+    ],
+    [
+      "median_household_income_aian",
+      "character varying"
+    ],
+    [
+      "median_household_income_ci_low_aian",
+      "character varying"
+    ],
+    [
+      "median_household_income_ci_high_aian",
+      "character varying"
+    ],
+    [
+      "median_household_income_asian",
+      "character varying"
+    ],
+    [
+      "median_household_income_ci_low_asian",
+      "character varying"
+    ],
+    [
+      "median_household_income_ci_high_asian",
+      "character varying"
+    ],
+    [
+      "median_household_income_black",
+      "character varying"
+    ],
+    [
+      "median_household_income_ci_low_black",
+      "character varying"
+    ],
+    [
+      "median_household_income_ci_high_black",
+      "character varying"
+    ],
+    [
+      "median_household_income_hispanic",
+      "character varying"
+    ],
+    [
+      "median_household_income_ci_low_hispanic",
+      "character varying"
+    ],
+    [
+      "median_household_income_ci_high_hispanic",
+      "character varying"
+    ],
+    [
+      "median_household_income_white",
+      "character varying"
+    ],
+    [
+      "median_household_income_ci_low_white",
+      "character varying"
+    ],
+    [
+      "median_household_income_ci_high_white",
+      "character varying"
+    ],
+    [
+      "children_eligible_for_free_or_reduced_price_lunch_raw_value",
+      "character varying"
+    ],
+    [
+      "children_eligible_for_free_or_reduced_price_lunch_numerator",
+      "character varying"
+    ],
+    [
+      "children_eligible_for_free_or_reduced_price_lunch_denominator",
+      "character varying"
+    ],
+    [
+      "residential_segregation_black_white_raw_value",
+      "character varying"
+    ],
+    [
+      "child_care_cost_burden_raw_value",
+      "character varying"
+    ],
+    [
+      "child_care_cost_burden_numerator",
+      "character varying"
+    ],
+    [
+      "child_care_cost_burden_denominator",
+      "character varying"
+    ],
+    [
+      "child_care_centers_raw_value",
+      "character varying"
+    ],
+    [
+      "child_care_centers_numerator",
+      "character varying"
+    ],
+    [
+      "child_care_centers_denominator",
+      "character varying"
+    ],
+    [
+      "homicides_raw_value",
+      "character varying"
+    ],
+    [
+      "homicides_numerator",
+      "character varying"
+    ],
+    [
+      "homicides_denominator",
+      "character varying"
+    ],
+    [
+      "homicides_ci_low",
+      "character varying"
+    ],
+    [
+      "homicides_ci_high",
+      "character varying"
+    ],
+    [
+      "homicides_aian",
+      "character varying"
+    ],
+    [
+      "homicides_ci_low_aian",
+      "character varying"
+    ],
+    [
+      "homicides_ci_high_aian",
+      "character varying"
+    ],
+    [
+      "homicides_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "homicides_ci_low_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "homicides_ci_high_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "homicides_black",
+      "character varying"
+    ],
+    [
+      "homicides_ci_low_black",
+      "character varying"
+    ],
+    [
+      "homicides_ci_high_black",
+      "character varying"
+    ],
+    [
+      "homicides_hispanic",
+      "character varying"
+    ],
+    [
+      "homicides_ci_low_hispanic",
+      "character varying"
+    ],
+    [
+      "homicides_ci_high_hispanic",
+      "character varying"
+    ],
+    [
+      "homicides_white",
+      "character varying"
+    ],
+    [
+      "homicides_ci_low_white",
+      "character varying"
+    ],
+    [
+      "homicides_ci_high_white",
+      "character varying"
+    ],
+    [
+      "homicides_nhopi",
+      "character varying"
+    ],
+    [
+      "homicides_ci_low_nhopi",
+      "character varying"
+    ],
+    [
+      "homicides_ci_high_nhopi",
+      "character varying"
+    ],
+    [
+      "suicides_raw_value",
+      "character varying"
+    ],
+    [
+      "suicides_numerator",
+      "character varying"
+    ],
+    [
+      "suicides_denominator",
+      "character varying"
+    ],
+    [
+      "suicides_ci_low",
+      "character varying"
+    ],
+    [
+      "suicides_ci_high",
+      "character varying"
+    ],
+    [
+      "crude_suicide_rate",
+      "character varying"
+    ],
+    [
+      "suicides_aian",
+      "character varying"
+    ],
+    [
+      "suicides_ci_low_aian",
+      "character varying"
+    ],
+    [
+      "suicides_ci_high_aian",
+      "character varying"
+    ],
+    [
+      "suicides_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "suicides_ci_low_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "suicides_ci_high_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "suicides_black",
+      "character varying"
+    ],
+    [
+      "suicides_ci_low_black",
+      "character varying"
+    ],
+    [
+      "suicides_ci_high_black",
+      "character varying"
+    ],
+    [
+      "suicides_hispanic",
+      "character varying"
+    ],
+    [
+      "suicides_ci_low_hispanic",
+      "character varying"
+    ],
+    [
+      "suicides_ci_high_hispanic",
+      "character varying"
+    ],
+    [
+      "suicides_white",
+      "character varying"
+    ],
+    [
+      "suicides_ci_low_white",
+      "character varying"
+    ],
+    [
+      "suicides_ci_high_white",
+      "character varying"
+    ],
+    [
+      "suicides_nhopi",
+      "character varying"
+    ],
+    [
+      "suicides_ci_low_nhopi",
+      "character varying"
+    ],
+    [
+      "suicides_ci_high_nhopi",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_raw_value",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_numerator",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_denominator",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_ci_low",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_ci_high",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_aian",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_ci_low_aian",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_ci_high_aian",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_ci_low_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_ci_high_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_black",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_ci_low_black",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_ci_high_black",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_hispanic",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_ci_low_hispanic",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_ci_high_hispanic",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_white",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_ci_low_white",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_ci_high_white",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_nhopi",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_ci_low_nhopi",
+      "character varying"
+    ],
+    [
+      "firearm_fatalities_ci_high_nhopi",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_raw_value",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_numerator",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_denominator",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_ci_low",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_ci_high",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_aian",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_ci_low_aian",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_ci_high_aian",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_ci_low_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_ci_high_asian_pacific_islander",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_black",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_ci_low_black",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_ci_high_black",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_hispanic",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_ci_low_hispanic",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_ci_high_hispanic",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_white",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_ci_low_white",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_ci_high_white",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_nhopi",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_ci_low_nhopi",
+      "character varying"
+    ],
+    [
+      "motor_vehicle_crash_deaths_ci_high_nhopi",
+      "character varying"
+    ],
+    [
+      "juvenile_arrests_raw_value",
+      "character varying"
+    ],
+    [
+      "juvenile_arrests_numerator",
+      "character varying"
+    ],
+    [
+      "juvenile_arrests_denominator",
+      "character varying"
+    ],
+    [
+      "number_of_juvenile_delinquency_cases_formally_processed_by_a_ju",
+      "character varying"
+    ],
+    [
+      "number_of_informally_handled_juvenile_delinquency_cases",
+      "character varying"
+    ],
+    [
+      "voter_turnout_raw_value",
+      "character varying"
+    ],
+    [
+      "voter_turnout_numerator",
+      "character varying"
+    ],
+    [
+      "voter_turnout_denominator",
+      "character varying"
+    ],
+    [
+      "census_participation_raw_value",
+      "character varying"
+    ],
+    [
+      "traffic_volume_raw_value",
+      "character varying"
+    ],
+    [
+      "homeownership_raw_value",
+      "character varying"
+    ],
+    [
+      "homeownership_numerator",
+      "character varying"
+    ],
+    [
+      "homeownership_denominator",
+      "character varying"
+    ],
+    [
+      "homeownership_ci_low",
+      "character varying"
+    ],
+    [
+      "homeownership_ci_high",
+      "character varying"
+    ],
+    [
+      "severe_housing_cost_burden_raw_value",
+      "character varying"
+    ],
+    [
+      "severe_housing_cost_burden_numerator",
+      "character varying"
+    ],
+    [
+      "severe_housing_cost_burden_denominator",
+      "character varying"
+    ],
+    [
+      "severe_housing_cost_burden_ci_low",
+      "character varying"
+    ],
+    [
+      "severe_housing_cost_burden_ci_high",
+      "character varying"
+    ],
+    [
+      "broadband_access_raw_value",
+      "character varying"
+    ],
+    [
+      "broadband_access_numerator",
+      "character varying"
+    ],
+    [
+      "broadband_access_denominator",
+      "character varying"
+    ],
+    [
+      "broadband_access_ci_low",
+      "character varying"
+    ],
+    [
+      "broadband_access_ci_high",
+      "character varying"
+    ],
+    [
+      "population_raw_value",
+      "character varying"
+    ],
+    [
+      "below_18_years_of_age_raw_value",
+      "character varying"
+    ],
+    [
+      "below_18_years_of_age_numerator",
+      "character varying"
+    ],
+    [
+      "below_18_years_of_age_denominator",
+      "character varying"
+    ],
+    [
+      "_65_and_older_raw_value",
+      "character varying"
+    ],
+    [
+      "_65_and_older_numerator",
+      "character varying"
+    ],
+    [
+      "_65_and_older_denominator",
+      "character varying"
+    ],
+    [
+      "non_hispanic_black_raw_value",
+      "character varying"
+    ],
+    [
+      "non_hispanic_black_numerator",
+      "character varying"
+    ],
+    [
+      "non_hispanic_black_denominator",
+      "character varying"
+    ],
+    [
+      "american_indian_or_alaska_native_raw_value",
+      "character varying"
+    ],
+    [
+      "american_indian_or_alaska_native_numerator",
+      "character varying"
+    ],
+    [
+      "american_indian_or_alaska_native_denominator",
+      "character varying"
+    ],
+    [
+      "asian_raw_value",
+      "character varying"
+    ],
+    [
+      "asian_numerator",
+      "character varying"
+    ],
+    [
+      "asian_denominator",
+      "character varying"
+    ],
+    [
+      "native_hawaiian_or_other_pacific_islander_raw_value",
+      "character varying"
+    ],
+    [
+      "native_hawaiian_or_other_pacific_islander_numerator",
+      "character varying"
+    ],
+    [
+      "native_hawaiian_or_other_pacific_islander_denominator",
+      "character varying"
+    ],
+    [
+      "hispanic_raw_value",
+      "character varying"
+    ],
+    [
+      "hispanic_numerator",
+      "character varying"
+    ],
+    [
+      "hispanic_denominator",
+      "character varying"
+    ],
+    [
+      "non_hispanic_white_raw_value",
+      "character varying"
+    ],
+    [
+      "non_hispanic_white_numerator",
+      "character varying"
+    ],
+    [
+      "non_hispanic_white_denominator",
+      "character varying"
+    ],
+    [
+      "not_proficient_in_english_raw_value",
+      "character varying"
+    ],
+    [
+      "not_proficient_in_english_numerator",
+      "character varying"
+    ],
+    [
+      "not_proficient_in_english_denominator",
+      "character varying"
+    ],
+    [
+      "not_proficient_in_english_ci_low",
+      "character varying"
+    ],
+    [
+      "not_proficient_in_english_ci_high",
+      "character varying"
+    ],
+    [
+      "female_raw_value",
+      "character varying"
+    ],
+    [
+      "female_numerator",
+      "character varying"
+    ],
+    [
+      "female_denominator",
+      "character varying"
+    ],
+    [
+      "rural_raw_value",
+      "character varying"
+    ],
+    [
+      "rural_numerator",
+      "character varying"
+    ],
+    [
+      "rural_denominator",
+      "character varying"
+    ]
+  ],
+  "f_2019_nber_complications_and_deaths_hospital": [
+    [
+      "facility_id",
+      "character varying"
+    ],
+    [
+      "facility_name",
+      "character varying"
+    ],
+    [
+      "address",
+      "character varying"
+    ],
+    [
+      "city",
+      "character varying"
+    ],
+    [
+      "state",
+      "character varying"
+    ],
+    [
+      "zip_code",
+      "character varying"
+    ],
+    [
+      "county_name",
+      "character varying"
+    ],
+    [
+      "phone_number",
+      "character varying"
+    ],
+    [
+      "measure_id",
+      "character varying"
+    ],
+    [
+      "measure_name",
+      "character varying"
+    ],
+    [
+      "compared_to_national",
+      "character varying"
+    ],
+    [
+      "denominator",
+      "character varying"
+    ],
+    [
+      "score",
+      "character varying"
+    ],
+    [
+      "lower_estimate",
+      "character varying"
+    ],
+    [
+      "higher_estimate",
+      "character varying"
+    ],
+    [
+      "footnote",
+      "character varying"
+    ],
+    [
+      "start_date",
+      "character varying"
+    ],
+    [
+      "end_date",
+      "character varying"
+    ]
+  ],
+  "f_2019_nber_timely_and_effective_care_hospital": [
+    [
+      "facility_id",
+      "character varying"
+    ],
+    [
+      "facility_name",
+      "character varying"
+    ],
+    [
+      "address",
+      "character varying"
+    ],
+    [
+      "city",
+      "character varying"
+    ],
+    [
+      "state",
+      "character varying"
+    ],
+    [
+      "zip_code",
+      "character varying"
+    ],
+    [
+      "county_name",
+      "character varying"
+    ],
+    [
+      "phone_number",
+      "character varying"
+    ],
+    [
+      "condition",
+      "character varying"
+    ],
+    [
+      "measure_id",
+      "character varying"
+    ],
+    [
+      "measure_name",
+      "character varying"
+    ],
+    [
+      "score",
+      "character varying"
+    ],
+    [
+      "sample",
+      "character varying"
+    ],
+    [
+      "footnote",
+      "character varying"
+    ],
+    [
+      "start_date",
+      "character varying"
+    ],
+    [
+      "end_date",
+      "character varying"
+    ]
+  ],
+  "f_2019_nber_unplanned_hospital_visits_hospital": [
+    [
+      "facility_id",
+      "character varying"
+    ],
+    [
+      "facility_name",
+      "character varying"
+    ],
+    [
+      "address",
+      "character varying"
+    ],
+    [
+      "city",
+      "character varying"
+    ],
+    [
+      "state",
+      "character varying"
+    ],
+    [
+      "zip_code",
+      "character varying"
+    ],
+    [
+      "county_name",
+      "character varying"
+    ],
+    [
+      "phone_number",
+      "character varying"
+    ],
+    [
+      "measure_id",
+      "character varying"
+    ],
+    [
+      "measure_name",
+      "character varying"
+    ],
+    [
+      "compared_to_national",
+      "character varying"
+    ],
+    [
+      "denominator",
+      "character varying"
+    ],
+    [
+      "score",
+      "character varying"
+    ],
+    [
+      "lower_estimate",
+      "character varying"
+    ],
+    [
+      "higher_estimate",
+      "character varying"
+    ],
+    [
+      "footnote",
+      "character varying"
+    ],
+    [
+      "start_date",
+      "character varying"
+    ],
+    [
+      "end_date",
+      "character varying"
+    ]
+  ],
+  "hrsa_health_equity_data": [
+    [
+      "county_fips_code",
+      "character varying"
+    ],
+    [
+      "state_name",
+      "character varying"
+    ],
+    [
+      "county_name",
+      "character varying"
+    ],
+    [
+      "cre_county_value_0_risk",
+      "character varying"
+    ],
+    [
+      "cre_county_value_1_2_risks",
+      "character varying"
+    ],
+    [
+      "cre_county_value_3_plus_risks",
+      "character varying"
+    ],
+    [
+      "cre_national_value_0_risk",
+      "character varying"
+    ],
+    [
+      "cre_national_value_1_2_risks",
+      "character varying"
+    ],
+    [
+      "cre_national_value_3_plus_risks",
+      "character varying"
+    ],
+    [
+      "cre_year",
+      "character varying"
+    ],
+    [
+      "cre_topic",
+      "character varying"
+    ],
+    [
+      "mdi_county_value",
+      "character varying"
+    ],
+    [
+      "mdi_national_value",
+      "character varying"
+    ],
+    [
+      "mdi_year",
+      "character varying"
+    ],
+    [
+      "mdi_topic",
+      "character varying"
+    ],
+    [
+      "sci_county_value",
+      "character varying"
+    ],
+    [
+      "sci_national_value",
+      "character varying"
+    ],
+    [
+      "sci_year",
+      "character varying"
+    ],
+    [
+      "sci_topic",
+      "character varying"
+    ],
+    [
+      "mmg_county_value",
+      "character varying"
+    ],
+    [
+      "mmg_national_value",
+      "character varying"
+    ],
+    [
+      "mmg_year",
+      "character varying"
+    ],
+    [
+      "mmg_topic",
+      "character varying"
+    ],
+    [
+      "svi_county_value",
+      "character varying"
+    ],
+    [
+      "svi_national_value",
+      "character varying"
+    ],
+    [
+      "svi_year",
+      "character varying"
+    ],
+    [
+      "svi_topic",
+      "character varying"
+    ],
+    [
+      "mhsvi_county_value",
+      "character varying"
+    ],
+    [
+      "mhsvi_national_value",
+      "character varying"
+    ],
+    [
+      "mhsvi_year",
+      "character varying"
+    ],
+    [
+      "mhsvi_topic",
+      "character varying"
+    ],
+    [
+      "eqi_county_value",
+      "character varying"
+    ],
+    [
+      "eqi_national_value",
+      "character varying"
+    ],
+    [
+      "eqi_year",
+      "character varying"
+    ],
+    [
+      "eqi_topic",
+      "character varying"
+    ],
+    [
+      "bric_county_value",
+      "character varying"
+    ],
+    [
+      "bric_national_value",
+      "character varying"
+    ],
+    [
+      "bric_year",
+      "character varying"
+    ],
+    [
+      "bric_topic",
+      "character varying"
+    ],
+    [
+      "chrr_county_value",
+      "character varying"
+    ],
+    [
+      "chrr_national_value",
+      "character varying"
+    ],
+    [
+      "chrr_year",
+      "character varying"
+    ],
+    [
+      "chrr_topic",
+      "character varying"
+    ],
+    [
+      "aqi_county_value",
+      "character varying"
+    ],
+    [
+      "aqi_national_value",
+      "character varying"
+    ],
+    [
+      "aqi_year",
+      "character varying"
+    ],
+    [
+      "aqi_topic",
+      "character varying"
+    ],
+    [
+      "irr_topic",
+      "character varying"
+    ],
+    [
+      "irr_year",
+      "character varying"
+    ],
+    [
+      "irr_national_value",
+      "character varying"
+    ],
+    [
+      "irr_county_value",
+      "character varying"
+    ],
+    [
+      "svehi_topic",
+      "character varying"
+    ],
+    [
+      "svehi_year",
+      "character varying"
+    ],
+    [
+      "svehi_national_value",
+      "character varying"
+    ],
+    [
+      "svehi_county_value",
+      "character varying"
+    ]
+  ],
+  "ihme_mortality_data_county_level_all_types_2019": [
+    [
+      "measure_id",
+      "character varying"
+    ],
+    [
+      "measure_name",
+      "character varying"
+    ],
+    [
+      "location_id",
+      "character varying"
+    ],
+    [
+      "location_name",
+      "character varying"
+    ],
+    [
+      "fips",
+      "character varying"
+    ],
+    [
+      "race_id",
+      "character varying"
+    ],
+    [
+      "race_name",
+      "character varying"
+    ],
+    [
+      "sex_id",
+      "character varying"
+    ],
+    [
+      "sex_name",
+      "character varying"
+    ],
+    [
+      "age_group_id",
+      "character varying"
+    ],
+    [
+      "age_name",
+      "character varying"
+    ],
+    [
+      "cause_id",
+      "character varying"
+    ],
+    [
+      "cause_name",
+      "character varying"
+    ],
+    [
+      "year",
+      "character varying"
+    ],
+    [
+      "metric_id",
+      "character varying"
+    ],
+    [
+      "metric_name",
+      "character varying"
+    ],
+    [
+      "val",
+      "character varying"
+    ],
+    [
+      "upper",
+      "character varying"
+    ],
+    [
+      "lower",
+      "character varying"
+    ]
+  ],
+  "kff_medicaid_expansion_012625": [
+    [
+      "state_abbrev",
+      "character varying"
+    ],
+    [
+      "state_name",
+      "character varying"
+    ],
+    [
+      "medicaid_expansion",
+      "character varying"
+    ],
+    [
+      "medicaid_not_adopted",
+      "character varying"
+    ],
+    [
+      "medicaid_eff_date",
+      "character varying"
+    ],
+    [
+      "exp_active_2019",
+      "character varying"
+    ],
+    [
+      "expansion_status",
+      "character varying"
+    ],
+    [
+      "description",
+      "character varying"
+    ],
+    [
+      "2024_pres_election",
+      "character varying"
+    ]
+  ],
+  "matched_hospitals": [
+    [
+      "aha_id",
+      "character varying"
+    ],
+    [
+      "chqpr_hospital",
+      "character varying"
+    ],
+    [
+      "aha_hospital_name",
+      "character varying"
+    ],
+    [
+      "aha_county_fips",
+      "character varying"
+    ],
+    [
+      "patient_services_margin",
+      "character varying"
+    ],
+    [
+      "total_margin",
+      "character varying"
+    ],
+    [
+      "name_distance",
+      "integer"
+    ],
+    [
+      "city_distance",
+      "integer"
+    ]
+  ],
+  "matched_hospitals_updated": [
+    [
+      "aha_id",
+      "character varying"
+    ],
+    [
+      "chqpr_hospital",
+      "character varying"
+    ],
+    [
+      "aha_hospital_name",
+      "character varying"
+    ],
+    [
+      "aha_county_fips",
+      "character varying"
+    ],
+    [
+      "patient_services_margin",
+      "character varying"
+    ],
+    [
+      "total_margin",
+      "character varying"
+    ],
+    [
+      "name_distance",
+      "character varying"
+    ],
+    [
+      "city_distance",
+      "character varying"
+    ]
+  ],
+  "nber_complications_and_deaths": [
+    [
+      "facility_id",
+      "character varying"
+    ],
+    [
+      "facility_name",
+      "character varying"
+    ],
+    [
+      "address",
+      "character varying"
+    ],
+    [
+      "city/town",
+      "character varying"
+    ],
+    [
+      "state",
+      "character varying"
+    ],
+    [
+      "zip_code",
+      "character varying"
+    ],
+    [
+      "county/parish",
+      "character varying"
+    ],
+    [
+      "telephone_number",
+      "character varying"
+    ],
+    [
+      "measure_id",
+      "character varying"
+    ],
+    [
+      "measure_name",
+      "character varying"
+    ],
+    [
+      "compared_to_national",
+      "character varying"
+    ],
+    [
+      "denominator",
+      "character varying"
+    ],
+    [
+      "score",
+      "character varying"
+    ],
+    [
+      "lower_estimate",
+      "character varying"
+    ],
+    [
+      "higher_estimate",
+      "character varying"
+    ],
+    [
+      "footnote",
+      "character varying"
+    ],
+    [
+      "start_date",
+      "character varying"
+    ],
+    [
+      "end_date",
+      "character varying"
+    ]
+  ],
+  "nber_hcahps_hospital": [
+    [
+      "facility_id",
+      "character varying"
+    ],
+    [
+      "facility_name",
+      "character varying"
+    ],
+    [
+      "address",
+      "character varying"
+    ],
+    [
+      "city_town",
+      "character varying"
+    ],
+    [
+      "state",
+      "character varying"
+    ],
+    [
+      "zip_code",
+      "character varying"
+    ],
+    [
+      "county_parish",
+      "character varying"
+    ],
+    [
+      "telephone_number",
+      "character varying"
+    ],
+    [
+      "hcahps_measure_id",
+      "character varying"
+    ],
+    [
+      "hcahps_question",
+      "character varying"
+    ],
+    [
+      "hcahps_answer_description",
+      "character varying"
+    ],
+    [
+      "patient_survey_star_rating",
+      "character varying"
+    ],
+    [
+      "patient_survey_star_rating_footnote",
+      "character varying"
+    ],
+    [
+      "hcahps_answer_percent",
+      "character varying"
+    ],
+    [
+      "hcahps_answer_percent_footnote",
+      "character varying"
+    ],
+    [
+      "hcahps_linear_mean_value",
+      "character varying"
+    ],
+    [
+      "number_of_completed_surveys",
+      "character varying"
+    ],
+    [
+      "number_of_completed_surveys_footnote",
+      "character varying"
+    ],
+    [
+      "survey_response_rate_percent",
+      "character varying"
+    ],
+    [
+      "survey_response_rate_percent_footnote",
+      "character varying"
+    ],
+    [
+      "start_date",
+      "character varying"
+    ],
+    [
+      "end_date",
+      "character varying"
+    ]
+  ],
+  "nber_healthcare_associated_infections": [
+    [
+      "facility_id",
+      "character varying"
+    ],
+    [
+      "facility_name",
+      "character varying"
+    ],
+    [
+      "address",
+      "character varying"
+    ],
+    [
+      "city/town",
+      "character varying"
+    ],
+    [
+      "state",
+      "character varying"
+    ],
+    [
+      "zip_code",
+      "character varying"
+    ],
+    [
+      "county/parish",
+      "character varying"
+    ],
+    [
+      "telephone_number",
+      "character varying"
+    ],
+    [
+      "measure_id",
+      "character varying"
+    ],
+    [
+      "measure_name",
+      "character varying"
+    ],
+    [
+      "compared_to_national",
+      "character varying"
+    ],
+    [
+      "score",
+      "character varying"
+    ],
+    [
+      "footnote",
+      "character varying"
+    ],
+    [
+      "start_date",
+      "character varying"
+    ],
+    [
+      "end_date",
+      "character varying"
+    ]
+  ],
+  "nber_hospital_general_information": [
+    [
+      "facility_id",
+      "character varying"
+    ],
+    [
+      "facility_name",
+      "character varying"
+    ],
+    [
+      "address",
+      "character varying"
+    ],
+    [
+      "city/town",
+      "character varying"
+    ],
+    [
+      "state",
+      "character varying"
+    ],
+    [
+      "zip_code",
+      "character varying"
+    ],
+    [
+      "county/parish",
+      "character varying"
+    ],
+    [
+      "telephone_number",
+      "character varying"
+    ],
+    [
+      "hospital_type",
+      "character varying"
+    ],
+    [
+      "hospital_ownership",
+      "character varying"
+    ],
+    [
+      "emergency_services",
+      "character varying"
+    ],
+    [
+      "meets_criteria_for_promoting_interoperability_of_ehrs",
+      "character varying"
+    ],
+    [
+      "meets_criteria_for_birthing_friendly_designation",
+      "character varying"
+    ],
+    [
+      "hospital_overall_rating",
+      "character varying"
+    ],
+    [
+      "hospital_overall_rating_footnote",
+      "character varying"
+    ],
+    [
+      "mort_group_measure_count",
+      "character varying"
+    ],
+    [
+      "count_of_facility_mort_measures",
+      "character varying"
+    ],
+    [
+      "count_of_mort_measures_better",
+      "character varying"
+    ],
+    [
+      "count_of_mort_measures_no_different",
+      "character varying"
+    ],
+    [
+      "count_of_mort_measures_worse",
+      "character varying"
+    ],
+    [
+      "mort_group_footnote",
+      "character varying"
+    ],
+    [
+      "safety_group_measure_count",
+      "character varying"
+    ],
+    [
+      "count_of_facility_safety_measures",
+      "character varying"
+    ],
+    [
+      "count_of_safety_measures_better",
+      "character varying"
+    ],
+    [
+      "count_of_safety_measures_no_different",
+      "character varying"
+    ],
+    [
+      "count_of_safety_measures_worse",
+      "character varying"
+    ],
+    [
+      "safety_group_footnote",
+      "character varying"
+    ],
+    [
+      "readm_group_measure_count",
+      "character varying"
+    ],
+    [
+      "count_of_facility_readm_measures",
+      "character varying"
+    ],
+    [
+      "count_of_readm_measures_better",
+      "character varying"
+    ],
+    [
+      "count_of_readm_measures_no_different",
+      "character varying"
+    ],
+    [
+      "count_of_readm_measures_worse",
+      "character varying"
+    ],
+    [
+      "readm_group_footnote",
+      "character varying"
+    ],
+    [
+      "pt_exp_group_measure_count",
+      "character varying"
+    ],
+    [
+      "count_of_facility_pt_exp_measures",
+      "character varying"
+    ],
+    [
+      "pt_exp_group_footnote",
+      "character varying"
+    ],
+    [
+      "te_group_measure_count",
+      "character varying"
+    ],
+    [
+      "count_of_facility_te_measures",
+      "character varying"
+    ],
+    [
+      "te_group_footnote",
+      "character varying"
+    ]
+  ],
+  "nber_pch_complications_unplanned_hosp_visits": [
+    [
+      "facility_id",
+      "character varying"
+    ],
+    [
+      "facility_name",
+      "character varying"
+    ],
+    [
+      "hospital_type",
+      "character varying"
+    ],
+    [
+      "address",
+      "character varying"
+    ],
+    [
+      "city/town",
+      "character varying"
+    ],
+    [
+      "state",
+      "character varying"
+    ],
+    [
+      "zip_code",
+      "character varying"
+    ],
+    [
+      "county/parish",
+      "character varying"
+    ],
+    [
+      "measure_id",
+      "character varying"
+    ],
+    [
+      "measure_description",
+      "character varying"
+    ],
+    [
+      "total_cases",
+      "character varying"
+    ],
+    [
+      "performance_category",
+      "character varying"
+    ],
+    [
+      "rate",
+      "character varying"
+    ],
+    [
+      "interval_lower_limit",
+      "character varying"
+    ],
+    [
+      "interval_upper_limit",
+      "character varying"
+    ],
+    [
+      "footnote",
+      "character varying"
+    ],
+    [
+      "start_date",
+      "character varying"
+    ],
+    [
+      "end_date",
+      "character varying"
+    ]
+  ],
+  "nber_timely_and_effective_care_hospital": [
+    [
+      "facility_id",
+      "character varying"
+    ],
+    [
+      "facility_name",
+      "character varying"
+    ],
+    [
+      "address",
+      "character varying"
+    ],
+    [
+      "city/town",
+      "character varying"
+    ],
+    [
+      "state",
+      "character varying"
+    ],
+    [
+      "zip_code",
+      "character varying"
+    ],
+    [
+      "county/parish",
+      "character varying"
+    ],
+    [
+      "telephone_number",
+      "character varying"
+    ],
+    [
+      "condition",
+      "character varying"
+    ],
+    [
+      "measure_id",
+      "character varying"
+    ],
+    [
+      "measure_name",
+      "character varying"
+    ],
+    [
+      "score",
+      "character varying"
+    ],
+    [
+      "sample",
+      "character varying"
+    ],
+    [
+      "footnote",
+      "character varying"
+    ],
+    [
+      "start_date",
+      "character varying"
+    ],
+    [
+      "end_date",
+      "character varying"
+    ]
+  ],
+  "nber_unplanned_hospital_visits_hospital": [
+    [
+      "facility_id",
+      "character varying"
+    ],
+    [
+      "facility_name",
+      "character varying"
+    ],
+    [
+      "address",
+      "character varying"
+    ],
+    [
+      "city/town",
+      "character varying"
+    ],
+    [
+      "state",
+      "character varying"
+    ],
+    [
+      "zip_code",
+      "character varying"
+    ],
+    [
+      "county/parish",
+      "character varying"
+    ],
+    [
+      "telephone_number",
+      "character varying"
+    ],
+    [
+      "measure_id",
+      "character varying"
+    ],
+    [
+      "measure_name",
+      "character varying"
+    ],
+    [
+      "compared_to_national",
+      "character varying"
+    ],
+    [
+      "denominator",
+      "character varying"
+    ],
+    [
+      "score",
+      "character varying"
+    ],
+    [
+      "lower_estimate",
+      "character varying"
+    ],
+    [
+      "higher_estimate",
+      "character varying"
+    ],
+    [
+      "number_of_patients",
+      "character varying"
+    ],
+    [
+      "number_of_patients_returned",
+      "character varying"
+    ],
+    [
+      "footnote",
+      "character varying"
+    ],
+    [
+      "start_date",
+      "character varying"
+    ],
+    [
+      "end_date",
+      "character varying"
+    ]
+  ],
+  "tamu_hospitals_geocoded": [
+    [
+      "hospital_id",
+      "character varying"
+    ],
+    [
+      "address",
+      "character varying"
+    ],
+    [
+      "city",
+      "character varying"
+    ],
+    [
+      "state",
+      "character varying"
+    ],
+    [
+      "zipcode",
+      "character varying"
+    ],
+    [
+      "county_fips",
+      "character varying"
+    ],
+    [
+      "auto_unique_id_2025_06_14_aj3248drexeledu_scrubbed_hospi",
+      "character varying"
+    ],
+    [
+      "transactionid",
+      "character varying"
+    ],
+    [
+      "timetaken",
+      "character varying"
+    ],
+    [
+      "source",
+      "character varying"
+    ],
+    [
+      "version",
+      "character varying"
+    ],
+    [
+      "updatedgeocoding",
+      "character varying"
+    ],
+    [
+      "errormessage",
+      "character varying"
+    ],
+    [
+      "latitude",
+      "character varying"
+    ],
+    [
+      "longitude",
+      "character varying"
+    ],
+    [
+      "matchtype",
+      "character varying"
+    ],
+    [
+      "featurematchinggeographytype",
+      "character varying"
+    ],
+    [
+      "micromatchstatus",
+      "character varying"
+    ],
+    [
+      "matchscore",
+      "character varying"
+    ],
+    [
+      "geocodequalitytype",
+      "character varying"
+    ],
+    [
+      "regionsize",
+      "character varying"
+    ],
+    [
+      "regionsizeunits",
+      "character varying"
+    ],
+    [
+      "naaccrqualcode",
+      "character varying"
+    ],
+    [
+      "naaccrqualtype",
+      "character varying"
+    ],
+    [
+      "penaltycode",
+      "character varying"
+    ],
+    [
+      "penaltycodesummary",
+      "character varying"
+    ],
+    [
+      "interpolationtype",
+      "character varying"
+    ],
+    [
+      "interpolationsubtype",
+      "character varying"
+    ],
+    [
+      "matchedlocationtype",
+      "character varying"
+    ],
+    [
+      "featurematchingresulttype",
+      "character varying"
+    ],
+    [
+      "featurematchingresultcount",
+      "character varying"
+    ],
+    [
+      "featurematchingresulttypenotes",
+      "character varying"
+    ],
+    [
+      "tiehandlingstrategytype",
+      "character varying"
+    ],
+    [
+      "featurematchingresulttypetiebreakingnotes",
+      "character varying"
+    ],
+    [
+      "featurematchinghierarchy",
+      "character varying"
+    ],
+    [
+      "featurematchinghierarchynotes",
+      "character varying"
+    ],
+    [
+      "outputgeocodes",
+      "character varying"
+    ],
+    [
+      "naaccrcertcode2000",
+      "character varying"
+    ],
+    [
+      "naaccrcerttype2000",
+      "character varying"
+    ],
+    [
+      "geolocationid2000",
+      "character varying"
+    ],
+    [
+      "censusblock2000",
+      "character varying"
+    ],
+    [
+      "censusblockgroup2000",
+      "character varying"
+    ],
+    [
+      "censustract2000",
+      "character varying"
+    ],
+    [
+      "censuscountyfips2000",
+      "character varying"
+    ],
+    [
+      "censuscbsafips2000",
+      "character varying"
+    ],
+    [
+      "censuscbsamicro2000",
+      "character varying"
+    ],
+    [
+      "censusmcdfips2000",
+      "character varying"
+    ],
+    [
+      "censusmetdivfips2000",
+      "character varying"
+    ],
+    [
+      "censusmsafips2000",
+      "character varying"
+    ],
+    [
+      "censusplacefips2000",
+      "character varying"
+    ],
+    [
+      "censusstatefips2000",
+      "character varying"
+    ],
+    [
+      "naaccrcertcode2010",
+      "character varying"
+    ],
+    [
+      "naaccrcerttype2010",
+      "character varying"
+    ],
+    [
+      "geolocationid2010",
+      "character varying"
+    ],
+    [
+      "censusblock2010",
+      "character varying"
+    ],
+    [
+      "censusblockgroup2010",
+      "character varying"
+    ],
+    [
+      "censustract2010",
+      "character varying"
+    ],
+    [
+      "censuscountyfips2010",
+      "character varying"
+    ],
+    [
+      "censuscbsafips2010",
+      "character varying"
+    ],
+    [
+      "censuscbsamicro2010",
+      "character varying"
+    ],
+    [
+      "censusmcdfips2010",
+      "character varying"
+    ],
+    [
+      "censusmetdivfips2010",
+      "character varying"
+    ],
+    [
+      "censusmsafips2010",
+      "character varying"
+    ],
+    [
+      "censusplacefips2010",
+      "character varying"
+    ],
+    [
+      "censusstatefips2010",
+      "character varying"
+    ],
+    [
+      "naaccrcertcode2020",
+      "character varying"
+    ],
+    [
+      "naaccrcerttype2020",
+      "character varying"
+    ],
+    [
+      "geolocationid2020",
+      "character varying"
+    ],
+    [
+      "censusblock2020",
+      "character varying"
+    ],
+    [
+      "censusblockgroup2020",
+      "character varying"
+    ],
+    [
+      "censustract2020",
+      "character varying"
+    ],
+    [
+      "censuscountyfips2020",
+      "character varying"
+    ],
+    [
+      "censuscbsafips2020",
+      "character varying"
+    ],
+    [
+      "censuscbsamicro2020",
+      "character varying"
+    ],
+    [
+      "censusmcdfips2020",
+      "character varying"
+    ],
+    [
+      "censusmetdivfips2020",
+      "character varying"
+    ],
+    [
+      "censusmsafips2020",
+      "character varying"
+    ],
+    [
+      "censusplacefips2020",
+      "character varying"
+    ],
+    [
+      "censusstatefips2020",
+      "character varying"
+    ],
+    [
+      "fnumber",
+      "character varying"
+    ],
+    [
+      "fnumberfractional",
+      "character varying"
+    ],
+    [
+      "fpredirectional",
+      "character varying"
+    ],
+    [
+      "fprequalifier",
+      "character varying"
+    ],
+    [
+      "fpretype",
+      "character varying"
+    ],
+    [
+      "fprearticle",
+      "character varying"
+    ],
+    [
+      "fname",
+      "character varying"
+    ],
+    [
+      "fpostarticle",
+      "character varying"
+    ],
+    [
+      "fsuffix",
+      "character varying"
+    ],
+    [
+      "fpostqualifier",
+      "character varying"
+    ],
+    [
+      "fpostdirectional",
+      "character varying"
+    ],
+    [
+      "fsuitetype",
+      "character varying"
+    ],
+    [
+      "fsuitenumber",
+      "character varying"
+    ],
+    [
+      "fpostofficeboxtype",
+      "character varying"
+    ],
+    [
+      "fpostofficeboxnumber",
+      "character varying"
+    ],
+    [
+      "fcity",
+      "character varying"
+    ],
+    [
+      "fconsolidatedcity",
+      "character varying"
+    ],
+    [
+      "fminorcivildivision",
+      "character varying"
+    ],
+    [
+      "fcountysubregion",
+      "character varying"
+    ],
+    [
+      "fcounty",
+      "character varying"
+    ],
+    [
+      "fstate",
+      "character varying"
+    ],
+    [
+      "fzip",
+      "character varying"
+    ],
+    [
+      "fzipplus1",
+      "character varying"
+    ],
+    [
+      "fzipplus2",
+      "character varying"
+    ],
+    [
+      "fzipplus3",
+      "character varying"
+    ],
+    [
+      "fzipplus4",
+      "character varying"
+    ],
+    [
+      "fzipplus5",
+      "character varying"
+    ],
+    [
+      "farea",
+      "character varying"
+    ],
+    [
+      "fareatype",
+      "character varying"
+    ],
+    [
+      "fgeometrysrid",
+      "character varying"
+    ],
+    [
+      "fgeometry",
+      "character varying"
+    ],
+    [
+      "fsource",
+      "character varying"
+    ],
+    [
+      "fvintage",
+      "character varying"
+    ],
+    [
+      "fprimaryidfield",
+      "character varying"
+    ],
+    [
+      "fprimaryidvalue",
+      "character varying"
+    ],
+    [
+      "fsecondaryidfield",
+      "character varying"
+    ],
+    [
+      "fsecondaryidvalue",
+      "character varying"
+    ],
+    [
+      "mnumber",
+      "character varying"
+    ],
+    [
+      "mnumberfractional",
+      "character varying"
+    ],
+    [
+      "mpredirectional",
+      "character varying"
+    ],
+    [
+      "mprequalifier",
+      "character varying"
+    ],
+    [
+      "mpretype",
+      "character varying"
+    ],
+    [
+      "mprearticle",
+      "character varying"
+    ],
+    [
+      "mname",
+      "character varying"
+    ],
+    [
+      "mpostarticle",
+      "character varying"
+    ],
+    [
+      "msuffix",
+      "character varying"
+    ],
+    [
+      "mpostqualifier",
+      "character varying"
+    ],
+    [
+      "mpostdirectional",
+      "character varying"
+    ],
+    [
+      "msuitetype",
+      "character varying"
+    ],
+    [
+      "msuitenumber",
+      "character varying"
+    ],
+    [
+      "mpostofficeboxtype",
+      "character varying"
+    ],
+    [
+      "mpostofficeboxnumber",
+      "character varying"
+    ],
+    [
+      "mcity",
+      "character varying"
+    ],
+    [
+      "mconsolidatedcity",
+      "character varying"
+    ],
+    [
+      "mminorcivildivision",
+      "character varying"
+    ],
+    [
+      "mcountysubregion",
+      "character varying"
+    ],
+    [
+      "mcounty",
+      "character varying"
+    ],
+    [
+      "mstate",
+      "character varying"
+    ],
+    [
+      "mzip",
+      "character varying"
+    ],
+    [
+      "mzipplus1",
+      "character varying"
+    ],
+    [
+      "mzipplus2",
+      "character varying"
+    ],
+    [
+      "mzipplus3",
+      "character varying"
+    ],
+    [
+      "mzipplus4",
+      "character varying"
+    ],
+    [
+      "mzipplus5",
+      "character varying"
+    ],
+    [
+      "pnumber",
+      "character varying"
+    ],
+    [
+      "pnumberfractional",
+      "character varying"
+    ],
+    [
+      "ppredirectional",
+      "character varying"
+    ],
+    [
+      "pprequalifier",
+      "character varying"
+    ],
+    [
+      "ppretype",
+      "character varying"
+    ],
+    [
+      "pprearticle",
+      "character varying"
+    ],
+    [
+      "pname",
+      "character varying"
+    ],
+    [
+      "ppostarticle",
+      "character varying"
+    ],
+    [
+      "psuffix",
+      "character varying"
+    ],
+    [
+      "ppostqualifier",
+      "character varying"
+    ],
+    [
+      "ppostdirectional",
+      "character varying"
+    ],
+    [
+      "psuitetype",
+      "character varying"
+    ],
+    [
+      "psuitenumber",
+      "character varying"
+    ],
+    [
+      "ppostofficeboxtype",
+      "character varying"
+    ],
+    [
+      "ppostofficeboxnumber",
+      "character varying"
+    ],
+    [
+      "pcity",
+      "character varying"
+    ],
+    [
+      "pconsolidatedcity",
+      "character varying"
+    ],
+    [
+      "pminorcivildivision",
+      "character varying"
+    ],
+    [
+      "pcountysubregion",
+      "character varying"
+    ],
+    [
+      "pcounty",
+      "character varying"
+    ],
+    [
+      "pstate",
+      "character varying"
+    ],
+    [
+      "pzip",
+      "character varying"
+    ],
+    [
+      "pzipplus1",
+      "character varying"
+    ],
+    [
+      "pzipplus2",
+      "character varying"
+    ],
+    [
+      "pzipplus3",
+      "character varying"
+    ],
+    [
+      "pzipplus4",
+      "character varying"
+    ],
+    [
+      "pzipplus5",
+      "character varying"
+    ],
+    [
+      "updatedknearest",
+      "character varying"
+    ],
+    [
+      "nearestid1",
+      "character varying"
+    ],
+    [
+      "nearestlatitude1",
+      "character varying"
+    ],
+    [
+      "nearestlongitude1",
+      "character varying"
+    ],
+    [
+      "nearestdistance1",
+      "character varying"
+    ]
+  ],
+  "uscounties": [
+    [
+      "county",
+      "character varying"
+    ],
+    [
+      "county_ascii",
+      "character varying"
+    ],
+    [
+      "county_full",
+      "character varying"
+    ],
+    [
+      "county_fips",
+      "character varying"
+    ],
+    [
+      "state_id",
+      "character varying"
+    ],
+    [
+      "state_name",
+      "character varying"
+    ],
+    [
+      "lat",
+      "character varying"
+    ],
+    [
+      "lng",
+      "character varying"
+    ],
+    [
+      "population",
+      "character varying"
+    ]
+  ],
+  "aha_fy2022": [
+    [
+      "id",
+      "character varying"
+    ],
+    [
+      "mcrnum",
+      "character varying"
+    ],
+    [
+      "hospname",
+      "character varying"
+    ],
+    [
+      "add1",
+      "character varying"
+    ],
+    [
+      "mlocity",
+      "character varying"
+    ],
+    [
+      "mstate",
+      "character varying"
+    ],
+    [
+      "mloczip",
+      "character varying"
+    ],
+    [
+      "cntrl",
+      "character varying"
+    ],
+    [
+      "adjpd",
+      "character varying"
+    ],
+    [
+      "bdtot",
+      "character varying"
+    ],
+    [
+      "cbsacode",
+      "character varying"
+    ],
+    [
+      "cbsatype",
+      "character varying"
+    ],
+    [
+      "ceamt",
+      "character varying"
+    ],
+    [
+      "crnfte",
+      "character varying"
+    ],
+    [
+      "fcounty",
+      "character varying"
+    ],
+    [
+      "ften",
+      "character varying"
+    ],
+    [
+      "ftetf",
+      "character varying"
+    ],
+    [
+      "gfeet",
+      "character varying"
+    ],
+    [
+      "lat",
+      "character varying"
+    ],
+    [
+      "long",
+      "character varying"
+    ],
+    [
+      "mapp18",
+      "character varying"
+    ],
+    [
+      "mapp19",
+      "character varying"
+    ],
+    [
+      "mapp20",
+      "character varying"
+    ],
+    [
+      "mapp3",
+      "character varying"
+    ],
+    [
+      "mapp5",
+      "character varying"
+    ],
+    [
+      "mapp8",
+      "character varying"
+    ],
+    [
+      "mhsmemb",
+      "character varying"
+    ],
+    [
+      "paytot",
+      "character varying"
+    ],
+    [
+      "robohos",
+      "character varying"
+    ],
+    [
+      "robosys",
+      "character varying"
+    ],
+    [
+      "roboven",
+      "character varying"
+    ],
+    [
+      "serv",
+      "character varying"
+    ],
+    [
+      "sysid",
+      "character varying"
+    ],
+    [
+      "vem",
+      "character varying"
+    ],
+    [
+      "vrn",
+      "character varying"
+    ],
+    [
+      "vtotl",
+      "character varying"
+    ],
+    [
+      "wfaiart",
+      "character varying"
+    ],
+    [
+      "wfaidna",
+      "character varying"
+    ],
+    [
+      "wfaioacw",
+      "character varying"
+    ],
+    [
+      "wfaippd",
+      "character varying"
+    ],
+    [
+      "wfaipsn",
+      "character varying"
+    ],
+    [
+      "wfaiss",
+      "character varying"
+    ],
+    [
+      "acocn",
+      "character varying"
+    ],
+    [
+      "auvz",
+      "character varying"
+    ],
+    [
+      "bndpct",
+      "character varying"
+    ],
+    [
+      "caprsk",
+      "character varying"
+    ],
+    [
+      "cppct",
+      "character varying"
+    ],
+    [
+      "exptot",
+      "character varying"
+    ],
+    [
+      "fteap",
+      "character varying"
+    ],
+    [
+      "fted",
+      "character varying"
+    ],
+    [
+      "ftep",
+      "character varying"
+    ],
+    [
+      "fter",
+      "character varying"
+    ],
+    [
+      "msicbd",
+      "character varying"
+    ],
+    [
+      "nicbd",
+      "character varying"
+    ],
+    [
+      "opra",
+      "character varying"
+    ],
+    [
+      "prpm",
+      "character varying"
+    ],
+    [
+      "vidvz",
+      "character varying"
+    ],
+    [
+      "vlab",
+      "character varying"
+    ],
+    [
+      "vmd",
+      "character varying"
+    ],
+    [
+      "vrsp",
+      "character varying"
+    ]
+  ],
+  "aha_fy2023": [
+    [
+      "id",
+      "character varying"
+    ],
+    [
+      "mcrnum",
+      "character varying"
+    ],
+    [
+      "hospname",
+      "character varying"
+    ],
+    [
+      "add1",
+      "character varying"
+    ],
+    [
+      "mlocity",
+      "character varying"
+    ],
+    [
+      "mstate",
+      "character varying"
+    ],
+    [
+      "mloczip",
+      "character varying"
+    ],
+    [
+      "cntrl",
+      "character varying"
+    ],
+    [
+      "auvz",
+      "character varying"
+    ],
+    [
+      "cbsacode",
+      "character varying"
+    ],
+    [
+      "cbsatype",
+      "character varying"
+    ],
+    [
+      "lat",
+      "character varying"
+    ],
+    [
+      "long",
+      "character varying"
+    ],
+    [
+      "mapp1",
+      "character varying"
+    ],
+    [
+      "mapp18",
+      "character varying"
+    ],
+    [
+      "mapp3",
+      "character varying"
+    ],
+    [
+      "mapp5",
+      "character varying"
+    ],
+    [
+      "mapp8",
+      "character varying"
+    ],
+    [
+      "mhsmemb",
+      "character varying"
+    ],
+    [
+      "prpm",
+      "character varying"
+    ],
+    [
+      "serv",
+      "character varying"
+    ],
+    [
+      "sysid",
+      "character varying"
+    ],
+    [
+      "vidvz",
+      "character varying"
+    ],
+    [
+      "acocn",
+      "character varying"
+    ],
+    [
+      "bndpct",
+      "character varying"
+    ],
+    [
+      "caprsk",
+      "character varying"
+    ],
+    [
+      "cppct",
+      "character varying"
+    ],
+    [
+      "eicuhos",
+      "character varying"
+    ],
+    [
+      "exptot",
+      "character varying"
+    ],
+    [
+      "msicbd",
+      "character varying"
+    ],
+    [
+      "nicbd",
+      "character varying"
+    ],
+    [
+      "opra",
+      "character varying"
+    ]
+  ],
+  "aha_fy2024": [
+    [
+      "id",
+      "character varying"
+    ],
+    [
+      "mcrnum",
+      "character varying"
+    ],
+    [
+      "hospname",
+      "character varying"
+    ],
+    [
+      "add1",
+      "character varying"
+    ],
+    [
+      "mlocity",
+      "character varying"
+    ],
+    [
+      "mstate",
+      "character varying"
+    ],
+    [
+      "mloczip",
+      "character varying"
+    ],
+    [
+      "cntrl",
+      "character varying"
+    ],
+    [
+      "adjpd",
+      "character varying"
+    ],
+    [
+      "aiopef",
+      "character varying"
+    ],
+    [
+      "aipatd",
+      "character varying"
+    ],
+    [
+      "airevc",
+      "character varying"
+    ],
+    [
+      "aiscop",
+      "character varying"
+    ],
+    [
+      "aisswm",
+      "character varying"
+    ],
+    [
+      "aitiot",
+      "character varying"
+    ],
+    [
+      "bdtot",
+      "character varying"
+    ],
+    [
+      "cbsacode",
+      "character varying"
+    ],
+    [
+      "cbsatype",
+      "character varying"
+    ],
+    [
+      "clinai",
+      "character varying"
+    ],
+    [
+      "clnoai",
+      "character varying"
+    ],
+    [
+      "clopai",
+      "character varying"
+    ],
+    [
+      "corrai",
+      "character varying"
+    ],
+    [
+      "dataai",
+      "character varying"
+    ],
+    [
+      "dctot",
+      "character varying"
+    ],
+    [
+      "diagai",
+      "character varying"
+    ],
+    [
+      "fcounty",
+      "character varying"
+    ],
+    [
+      "ften",
+      "character varying"
+    ],
+    [
+      "ftetf",
+      "character varying"
+    ],
+    [
+      "lat",
+      "character varying"
+    ],
+    [
+      "long",
+      "character varying"
+    ],
+    [
+      "mapp18",
+      "character varying"
+    ],
+    [
+      "mapp19",
+      "character varying"
+    ],
+    [
+      "mapp20",
+      "character varying"
+    ],
+    [
+      "mapp3",
+      "character varying"
+    ],
+    [
+      "mapp5",
+      "character varying"
+    ],
+    [
+      "mapp8",
+      "character varying"
+    ],
+    [
+      "mhsmemb",
+      "character varying"
+    ],
+    [
+      "othait",
+      "character varying"
+    ],
+    [
+      "othcln",
+      "character varying"
+    ],
+    [
+      "othcop",
+      "character varying"
+    ],
+    [
+      "papcai",
+      "character varying"
+    ],
+    [
+      "pcoeai",
+      "character varying"
+    ],
+    [
+      "pdmrai",
+      "character varying"
+    ],
+    [
+      "pophai",
+      "character varying"
+    ],
+    [
+      "ptaai",
+      "character varying"
+    ],
+    [
+      "regcai",
+      "character varying"
+    ],
+    [
+      "robohos",
+      "character varying"
+    ],
+    [
+      "robosys",
+      "character varying"
+    ],
+    [
+      "roboven",
+      "character varying"
+    ],
+    [
+      "serv",
+      "character varying"
+    ],
+    [
+      "stupai",
+      "character varying"
+    ],
+    [
+      "surgai",
+      "character varying"
+    ],
+    [
+      "sysid",
+      "character varying"
+    ],
+    [
+      "acocn",
+      "character varying"
+    ],
+    [
+      "auvz",
+      "character varying"
+    ],
+    [
+      "bndpct",
+      "character varying"
+    ],
+    [
+      "caprsk",
+      "character varying"
+    ],
+    [
+      "cppct",
+      "character varying"
+    ],
+    [
+      "eicuhos",
+      "character varying"
+    ],
+    [
+      "exptot",
+      "character varying"
+    ],
+    [
+      "fteap",
+      "character varying"
+    ],
+    [
+      "fted",
+      "character varying"
+    ],
+    [
+      "ftep",
+      "character varying"
+    ],
+    [
+      "fter",
+      "character varying"
+    ],
+    [
+      "msicbd",
+      "character varying"
+    ],
+    [
+      "nicbd",
+      "character varying"
+    ],
+    [
+      "niclev",
+      "character varying"
+    ],
+    [
+      "opra",
+      "character varying"
+    ],
+    [
+      "prpm",
+      "character varying"
+    ],
+    [
+      "vidvz",
+      "character varying"
+    ],
+    [
+      "vlab",
+      "character varying"
+    ],
+    [
+      "vmd",
+      "character varying"
+    ],
+    [
+      "vrn",
+      "character varying"
+    ],
+    [
+      "vrsp",
+      "character varying"
+    ],
+    [
+      "vtotl",
+      "character varying"
+    ],
+    [
+      "cofvhos",
+      "character varying"
+    ],
+    [
+      "strchos",
+      "character varying"
+    ],
+    [
+      "pdishos",
+      "character varying"
+    ],
+    [
+      "psytrhos",
+      "character varying"
+    ],
+    [
+      "sudhos",
+      "character varying"
+    ]
+  ],
+  "cms_2022_hospital_quality_long": [
+    [
+      "snapshot",
+      "text"
+    ],
+    [
+      "source_archive",
+      "text"
+    ],
+    [
+      "source_file",
+      "text"
+    ],
+    [
+      "facility_id",
+      "text"
+    ],
+    [
+      "facility_name",
+      "text"
+    ],
+    [
+      "address",
+      "text"
+    ],
+    [
+      "city",
+      "text"
+    ],
+    [
+      "state",
+      "text"
+    ],
+    [
+      "zip_code",
+      "text"
+    ],
+    [
+      "county_name",
+      "text"
+    ],
+    [
+      "phone_number",
+      "text"
+    ],
+    [
+      "hospital_type",
+      "text"
+    ],
+    [
+      "hospital_ownership",
+      "text"
+    ],
+    [
+      "emergency_services",
+      "text"
+    ],
+    [
+      "condition",
+      "text"
+    ],
+    [
+      "measure_id",
+      "text"
+    ],
+    [
+      "measure_name",
+      "text"
+    ],
+    [
+      "score_raw",
+      "text"
+    ],
+    [
+      "score_numeric",
+      "numeric"
+    ],
+    [
+      "sample",
+      "text"
+    ],
+    [
+      "denominator",
+      "text"
+    ],
+    [
+      "compared_to_national",
+      "text"
+    ],
+    [
+      "lower_estimate",
+      "text"
+    ],
+    [
+      "higher_estimate",
+      "text"
+    ],
+    [
+      "footnote",
+      "text"
+    ],
+    [
+      "row_start_date",
+      "text"
+    ],
+    [
+      "row_end_date",
+      "text"
+    ],
+    [
+      "measure_start_quarter",
+      "text"
+    ],
+    [
+      "measure_start_date",
+      "text"
+    ],
+    [
+      "measure_end_quarter",
+      "text"
+    ],
+    [
+      "measure_end_date",
+      "text"
+    ]
+  ],
+  "cms_hcris_2023_financial_capacity": [
+    [
+      "rpt_rec_num",
+      "text"
+    ],
+    [
+      "provider_ccn",
+      "text"
+    ],
+    [
+      "hospital_name",
+      "text"
+    ],
+    [
+      "state_code",
+      "text"
+    ],
+    [
+      "county",
+      "text"
+    ],
+    [
+      "medicare_cbsa_number",
+      "text"
+    ],
+    [
+      "rural_versus_urban",
+      "text"
+    ],
+    [
+      "ccn_facility_type",
+      "text"
+    ],
+    [
+      "provider_type",
+      "text"
+    ],
+    [
+      "type_of_control",
+      "text"
+    ],
+    [
+      "fiscal_year_begin_date",
+      "date"
+    ],
+    [
+      "fiscal_year_end_date",
+      "date"
+    ],
+    [
+      "report_days",
+      "integer"
+    ],
+    [
+      "cash_on_hand_and_in_banks",
+      "numeric"
+    ],
+    [
+      "temporary_investments",
+      "numeric"
+    ],
+    [
+      "total_current_assets",
+      "numeric"
+    ],
+    [
+      "total_assets",
+      "numeric"
+    ],
+    [
+      "total_current_liabilities",
+      "numeric"
+    ],
+    [
+      "total_liabilities",
+      "numeric"
+    ],
+    [
+      "total_patient_revenue",
+      "numeric"
+    ],
+    [
+      "net_patient_revenue",
+      "numeric"
+    ],
+    [
+      "total_operating_expense",
+      "numeric"
+    ],
+    [
+      "depreciation_cost",
+      "numeric"
+    ],
+    [
+      "net_income_from_service_to_patients",
+      "numeric"
+    ],
+    [
+      "total_other_income",
+      "numeric"
+    ],
+    [
+      "total_income",
+      "numeric"
+    ],
+    [
+      "total_other_expenses",
+      "numeric"
+    ],
+    [
+      "net_income",
+      "numeric"
+    ],
+    [
+      "cost_to_charge_ratio",
+      "numeric"
+    ],
+    [
+      "ccn_report_rank",
+      "bigint"
+    ],
+    [
+      "ccn_report_count",
+      "bigint"
+    ],
+    [
+      "cash_and_temporary_investments",
+      "numeric"
+    ],
+    [
+      "cash_operating_expense",
+      "numeric"
+    ],
+    [
+      "total_revenue_for_margin",
+      "numeric"
+    ],
+    [
+      "operating_margin",
+      "numeric"
+    ],
+    [
+      "total_margin",
+      "numeric"
+    ],
+    [
+      "days_cash_on_hand",
+      "numeric"
+    ],
+    [
+      "current_ratio",
+      "numeric"
+    ],
+    [
+      "cash_to_net_patient_revenue",
+      "numeric"
+    ]
+  ]
+}

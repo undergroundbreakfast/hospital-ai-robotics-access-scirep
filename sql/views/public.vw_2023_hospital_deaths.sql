@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW public.vw_2023_hospital_deaths AS
+CREATE OR REPLACE VIEW public."vw_2023_hospital_deaths" AS
  WITH params AS (
          SELECT 5::numeric AS suppressed_impute_value,
             100000.0 AS rate_multiplier

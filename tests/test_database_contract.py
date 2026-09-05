@@ -80,17 +80,16 @@ def _connect():
             import psycopg2 as psycopg
         except ImportError as exc:
             pytest.skip(f"Neither psycopg nor psycopg2 is installed: {exc}")
-    password = os.getenv("POSTGRESQL_KEY") or os.getenv("PGPASSWORD")
-    if not password:
-        pytest.skip("Set POSTGRESQL_KEY or PGPASSWORD to run database contract tests.")
-    conn = psycopg.connect(
-        host=os.getenv("POSTGRES_HOST", os.getenv("PGHOST", "localhost")),
-        port=int(os.getenv("POSTGRES_PORT", os.getenv("PGPORT", "5432"))),
-        dbname=os.getenv("POSTGRES_DB", os.getenv("PGDATABASE", "Research_TEST")),
-        user=os.getenv("POSTGRES_USER", os.getenv("PGUSER", "postgres")),
-        password=password,
-        connect_timeout=10,
-    )
+    import sys
+    from conftest import REPO_ROOT
+    sys.path.insert(0, str(REPO_ROOT / "code"))
+    from scirep_config import database_settings
+    try:
+        settings = database_settings()
+    except ValueError as exc:
+        pytest.skip(str(exc))
+    conn = psycopg.connect(**settings, connect_timeout=10,
+                           options="-c default_transaction_read_only=on")
     with conn.cursor() as cur:
         cur.execute("set statement_timeout = '15s'")
     return conn

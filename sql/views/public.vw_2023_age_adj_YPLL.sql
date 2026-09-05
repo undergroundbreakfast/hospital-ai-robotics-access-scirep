@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW public.vw_2023_age_adj_YPLL AS
+CREATE OR REPLACE VIEW public."vw_2023_age_adj_YPLL" AS
  WITH pop_wide AS (
          SELECT lpad(census_est2024_population.state::text, 2, '0'::text) || lpad(census_est2024_population.county::text, 3, '0'::text) AS county_fips,
             census_est2024_population.under5_tot::numeric AS pop_0_4,

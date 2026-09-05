@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW public.vw_conceptual_model_variables_adjpd AS
+CREATE OR REPLACE VIEW public."vw_conceptual_model_variables_adjpd" AS
  WITH hospital_data AS (
          SELECT lpad(h.county_fips, 5, '0'::text) AS county_fips,
             safe_to_numeric(h.ai_adoption_score::text) AS ai_adoption_score,

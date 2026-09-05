@@ -20,7 +20,7 @@ The suite has three layers:
 ## Run Offline Artifact Tests
 
 ```sh
-python -m pip install -r requirements-dev.txt
+python -m pip install -r requirements-test.txt
 pytest
 ```
 
@@ -74,3 +74,9 @@ automatic extraction from the submitted document.
   dropped, or not loaded into the local database.
 - A **manifest failure** means files changed after `FILE_MANIFEST_SHA256.txt`
   was generated. Regenerate the manifest after intentional edits.
+
+## Publication package checks
+
+The suite additionally validates database configuration with dummy credentials, reserved URL characters, CMS extraction with synthetic ZIP fixtures, explicit endpoint denominators, and CT6 uncertainty/ESS. The CI schema job builds `source_tables.sql` and `build_views.psql.sql` against empty PostgreSQL 16. The recovered schema must still be loaded with the appropriate prepared source data for numerical replication.
+
+Refresh the release manifest after intentional file edits using `python tools/update_manifest.py`. This command inventories version-controlled and non-ignored candidate files; inspect `git status` before running it.

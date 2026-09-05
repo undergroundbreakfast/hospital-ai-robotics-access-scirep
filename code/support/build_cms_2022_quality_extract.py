@@ -9,11 +9,13 @@ the source CSVs needed for auditability.
 from __future__ import annotations
 
 import csv
+import argparse
+import urllib.request
 import zipfile
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2] / "data" / "public" / "cms_2022_hospital_quality"
 ARCHIVE_DIR = ROOT / "archives"
 RAW_DIR = ROOT / "raw"
 FILTERED_DIR = ROOT / "filtered"
@@ -194,6 +196,26 @@ def write_csv(path: Path, rows: list[dict[str, str]]) -> None:
         writer.writerows(rows)
 
 
+def download_archives() -> None:
+    """Download the four fixed CMS snapshots, keeping incomplete files separate."""
+    ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+    for filename in SNAPSHOTS.values():
+        destination = ARCHIVE_DIR / filename
+        if destination.exists():
+            continue
+        url = "https://data.cms.gov/provider-data/sites/default/files/archive/Hospitals/2022/" + filename
+        temporary = destination.with_suffix(".zip.part")
+        try:
+            with urllib.request.urlopen(url, timeout=120) as source, temporary.open("wb") as target:
+                import shutil
+                shutil.copyfileobj(source, target)
+            if not zipfile.is_zipfile(temporary):
+                raise ValueError(f"CMS did not return a ZIP archive for {filename}")
+            temporary.replace(destination)
+        finally:
+            temporary.unlink(missing_ok=True)
+
+
 def main() -> None:
     all_rows: list[dict[str, str]] = []
     manifest_rows: list[dict[str, str]] = []
@@ -276,4 +298,9 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--download", action="store_true", help="Fetch missing fixed CMS 2022 archives before extraction")
+    args = parser.parse_args()
+    if args.download:
+        download_archives()
     main()

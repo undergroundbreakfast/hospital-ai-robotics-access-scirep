@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW public.vw_hospital_ai_score_adjpd AS
+CREATE OR REPLACE VIEW public."vw_hospital_ai_score_adjpd" AS
  WITH hospital_details AS (
          SELECT aha_survey_data.id,
             aha_survey_data.mname,

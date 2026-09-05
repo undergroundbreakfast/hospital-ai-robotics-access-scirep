@@ -5,7 +5,7 @@
 # ==============================================================================
 # -*- coding: utf-8 -*-
 """
-Dissertation Replication & Testing Script (v54)
+Scientific Reports outcome analyses (derived from dissertation workflow v54)
 ---------------------------------------------------------
 This script conducts a comprehensive analysis for a doctoral dissertation focusing 
 on the impact of technology adoption on health outcomes and hospital efficiency.
@@ -22,12 +22,15 @@ Key Features:
 - Generates clear, tabular results in CSV format and optional visualizations.
 - Produces a single, unified report summarizing all statistical tests.
 
-This is a complete, end-to-end script designed to be run without modification.
+Requires the prepared analytic database described in docs/database_setup.md.
+Outputs include historical exploratory analyses as well as published endpoints;
+see docs/result_provenance.md for the publication artifact mapping.
 
 Author: Aaron Johnson
 """
 
 import os
+from scirep_config import create_db_engine
 import sys
 import logging
 import datetime
@@ -429,26 +432,11 @@ def write_run_memory_markdown(
 # DB Connection & Schema Helpers
 # =============================================================================
 def connect_to_database(logger) -> Engine:
-    host = os.getenv("POSTGRES_HOST", 'localhost')
-    database = os.getenv("POSTGRES_DB", 'Research_TEST')
-    user = os.getenv("POSTGRES_USER", 'postgres')
-    password = os.getenv("POSTGRESQL_KEY")
-
-    if password is None:
-        logger.error("POSTGRESQL_KEY environment variable not set.")
-        sys.exit("Database password not configured. Exiting.")
-
-    try:
-        conn_str = f"postgresql+psycopg2://{user}:{password}@{host}/{database}"
-        engine = create_engine(conn_str)
-        with engine.connect() as conn:
-            conn.execute(text("SELECT 1"))
-        logger.info(f"Connected to PostgreSQL database '{database}'.")
-        return engine
-    except Exception as e:
-        logger.error(f"Database connection failed: {e}")
-        logger.debug(traceback.format_exc())
-        sys.exit(1)
+    engine = create_db_engine()
+    with engine.connect() as conn:
+        conn.execute(text("SELECT 1"))
+    logger.info("Connected to the configured PostgreSQL database.")
+    return engine
 
 def table_exists(engine: Engine, table_name: str, logger) -> bool:
     try:

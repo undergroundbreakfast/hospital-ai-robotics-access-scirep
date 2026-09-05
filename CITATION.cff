@@ -9,7 +9,21 @@ authors:
     given-names: David
   - family-names: Harrison
     given-names: Teresa D.
-version: 1.0.3
-date-released: 2026-06-06
+version: 1.0.5
+date-released: 2026-09-05
 repository-code: "https://github.com/undergroundbreakfast/hospital-ai-robotics-access-scirep"
 license: MIT
+preferred-citation:
+  type: article
+  title: "Hospital AI and robotics adoption and access inequality in the United States"
+  authors:
+    - family-names: Johnson
+      given-names: Aaron
+    - family-names: Gefen
+      given-names: David
+    - family-names: Harrison
+      given-names: Teresa D.
+  journal: Scientific Reports
+  year: 2026
+  doi: 10.1038/s41598-026-70027-1
+  notes: "Accepted 31 August 2026; DOI supplied in the publisher proof."

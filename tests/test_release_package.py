@@ -55,34 +55,16 @@ def test_manifest_hashes_match_current_files() -> None:
 
 
 def test_public_package_does_not_include_restricted_raw_data() -> None:
-    forbidden_patterns = [
-        "data/raw",
-        "data/aha",
-        "data/licensed",
-        "data/restricted",
-        "data/public/aha",
-        "data/public/cms_2022_hospital_quality/raw",
-        "data/public/cms_2022_hospital_quality/archives",
-        "data/public/cms_2022_hospital_quality/filtered",
-    ]
-    existing_forbidden = [
-        rel
-        for rel in forbidden_patterns
-        if (REPO_ROOT / rel).exists() and any((REPO_ROOT / rel).rglob("*"))
-    ]
-    forbidden_aha_files = sorted(
-        {
-            str(path.relative_to(REPO_ROOT))
-            for pattern in [
-                "data/**/*.dta",
-                "data/**/*aha*survey*.csv",
-                "data/**/*AHA*Survey*.csv",
-                "data/**/*aha_fy*.csv",
-                "data/**/*AHA*.xlsx",
-            ]
-            for path in REPO_ROOT.glob(pattern)
-            if path.is_file()
-        }
-    )
-    assert not existing_forbidden, f"Restricted/raw data should not be committed: {existing_forbidden}"
-    assert not forbidden_aha_files, f"Licensed AHA source files should not be committed: {forbidden_aha_files}"
+    # Check the release inventory, not ignored local inputs created by a rerun.
+    names = [line.split(maxsplit=1)[1].removeprefix("./")
+             for line in (REPO_ROOT / "FILE_MANIFEST_SHA256.txt").read_text().splitlines()
+             if line.strip()]
+    forbidden = ("data/raw/", "data/aha/", "data/licensed/", "data/restricted/",
+                 "outputs/", "data/public/aha/", "code/support/archives/",
+                 "code/support/raw/", "code/support/filtered/",
+                 "data/public/cms_2022_hospital_quality/raw/",
+                 "data/public/cms_2022_hospital_quality/archives/",
+                 "data/public/cms_2022_hospital_quality/filtered/")
+    assert not [name for name in names if name.startswith(forbidden)]
+    assert not [name for name in names if name.endswith((".dta", ".xlsx", ".zip", ".env"))]
+    assert not [name for name in names if "hospital_dataset" in name or "pre_exposure_analysis_dataset" in name]

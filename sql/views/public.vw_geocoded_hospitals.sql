@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW public.vw_geocoded_hospitals AS
+CREATE OR REPLACE VIEW public."vw_geocoded_hospitals" AS
  SELECT tg.hospital_id,
     tg.address,
     tg.city,

@@ -17,6 +17,7 @@ Purpose:
 """
 
 import os
+from scirep_config import create_db_engine
 import sys
 import uuid
 import time
@@ -85,26 +86,11 @@ def setup_logger(
 
 
 def connect_to_database(logger) -> Engine:
-    host = os.getenv("POSTGRES_HOST", "localhost")
-    database = os.getenv("POSTGRES_DB", "Research_TEST")
-    user = os.getenv("POSTGRES_USER", "postgres")
-    password = os.getenv("POSTGRESQL_KEY")
-
-    if password is None:
-        logger.error("POSTGRESQL_KEY environment variable not set.")
-        sys.exit("Database password not configured. Exiting.")
-
-    try:
-        conn_str = f"postgresql+psycopg2://{user}:{password}@{host}/{database}"
-        engine = create_engine(conn_str)
-        with engine.connect() as conn:
-            conn.execute(text("SELECT 1"))
-        logger.info(f"Connected to PostgreSQL database '{database}'.")
-        return engine
-    except Exception as e:
-        logger.error(f"Database connection failed: {e}")
-        logger.debug(traceback.format_exc())
-        sys.exit(1)
+    engine = create_db_engine()
+    with engine.connect() as conn:
+        conn.execute(text("SELECT 1"))
+    logger.info("Connected to the configured PostgreSQL database.")
+    return engine
 
 
 def table_exists(engine: Engine, table_name: str, logger) -> bool:
