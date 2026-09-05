@@ -1,6 +1,6 @@
 # Change log
 
-## v1.0.5 — publication companion candidate (2026-09-05)
+## v1.0.5 — publication companion (2026-09-05)
 
 - Preserve statistical estimates; document the CT6 proof interval/ESS discrepancy and add exact checks for those archived quantities.
 - Separate hospital source-frame size from outcome-specific model denominators.
@@ -11,7 +11,7 @@
 - Pin a tested compatibility environment, add omitted analysis dependencies, and introduce offline/empty-schema CI checks.
 - Update citation metadata, code attribution, setup instructions, and figure-source synchronization.
 
-This candidate does not move v1.0.4 and does not represent a full raw-data statistical rerun. See docs/result_provenance.md and docs/database_setup.md for remaining boundaries. Finalize the release date and proof citation before publishing the tag.
+This release preserves v1.0.4 and does not represent a full raw-data statistical rerun. See docs/result_provenance.md and docs/database_setup.md for remaining boundaries.
 
 ## v1.0.4 — 2026-06-08
 

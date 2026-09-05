@@ -2,7 +2,7 @@
 
 Research code and aggregate artifacts accompanying the article accepted by **Scientific Reports** on 31 August 2026 (Johnson, Gefen, and Harrison).
 
-**Publication companion candidate: v1.0.5.** The previously submitted version is [v1.0.4](https://github.com/undergroundbreakfast/hospital-ai-robotics-access-scirep/tree/v1.0.4). See [CHANGELOG.md](CHANGELOG.md) for package corrections and [result provenance](docs/result_provenance.md) for the CT6 proof discrepancy. Statistical result estimates have not been changed to match proof text.
+**Publication companion: [v1.0.5](https://github.com/undergroundbreakfast/hospital-ai-robotics-access-scirep/releases/tag/v1.0.5).** The previously submitted version is [v1.0.4](https://github.com/undergroundbreakfast/hospital-ai-robotics-access-scirep/tree/v1.0.4). See [CHANGELOG.md](CHANGELOG.md) for package corrections and [result provenance](docs/result_provenance.md) for the CT6 proof discrepancy. Statistical result estimates have not been changed to match proof text.
 
 Article DOI supplied in the publisher proof: [10.1038/s41598-026-70027-1](https://doi.org/10.1038/s41598-026-70027-1). The DOI may not resolve until publication. Citation metadata is in [CITATION.cff](CITATION.cff).
 
